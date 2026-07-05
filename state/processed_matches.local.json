@@ -1,0 +1,2197 @@
+{
+  "failed": {
+    "local_774fac18ff9cd8a915e704553ed5489744f02975": {
+      "demo_path": "demos/extracted/b8-vs-tyloo-mirage-p1.dem",
+      "error": "Suspiciously few rounds detected for match_id=local_774fac18ff9cd8a915e704553ed5489744f02975: rounds=3 min_rounds_per_match=5. Refusing to write incomplete round segmentation to Mongo.",
+      "failed_at": "2026-06-30T12:58:27.970584+00:00",
+      "rejected_path": "demos/rejected/b8-vs-tyloo-mirage-p1.dem",
+      "source": "local"
+    },
+    "local_a2e1593698b7f109e540f8226a2ec0c122ad3621": {
+      "demo_path": "demos/extracted/m80-vs-nrg-m2-mirage-p1.dem",
+      "error": "Suspiciously few rounds detected for match_id=local_a2e1593698b7f109e540f8226a2ec0c122ad3621: rounds=2 min_rounds_per_match=5. Refusing to write incomplete round segmentation to Mongo.",
+      "failed_at": "2026-06-30T13:53:45.979987+00:00",
+      "rejected_path": "demos/rejected/m80-vs-nrg-m2-mirage-p1.dem",
+      "source": "local"
+    },
+    "local_bbdcc9276dc1f6c8fb775e559bcf50fa1e66f258": {
+      "demo_path": "demos/extracted/mibr-vs-lynn-vision-m1-anubis-p1.dem",
+      "error": "Suspiciously few rounds detected for match_id=local_bbdcc9276dc1f6c8fb775e559bcf50fa1e66f258: rounds=4 min_rounds_per_match=5. Refusing to write incomplete round segmentation to Mongo.",
+      "failed_at": "2026-06-30T13:55:52.324338+00:00",
+      "rejected_path": "demos/rejected/mibr-vs-lynn-vision-m1-anubis-p1.dem",
+      "source": "local"
+    },
+    "local_c5b3425c393041fa23795ea2c7e33308986021d8": {
+      "demo_path": "demos/extracted/m80-vs-sharks-mirage-p2.dem",
+      "error": "Suspiciously few rounds detected for match_id=local_c5b3425c393041fa23795ea2c7e33308986021d8: rounds=3 min_rounds_per_match=5. Refusing to write incomplete round segmentation to Mongo.",
+      "failed_at": "2026-06-30T13:53:52.858557+00:00",
+      "rejected_path": "demos/rejected/m80-vs-sharks-mirage-p2.dem",
+      "source": "local"
+    }
+  },
+  "processed": {
+    "local_0053ee1607be974b79e749d99242a8d0431ef189": {
+      "demo_path": "demos/extracted/faze-vs-natus-vincere-m1-ancient.dem",
+      "processed_at": "2026-06-30T13:03:50.327278+00:00",
+      "round_count": 18,
+      "sample_count": 1057,
+      "source": "local"
+    },
+    "local_04d9d8a3417f7aa7d218cc3d239f301009327dbd": {
+      "demo_path": "demos/extracted/imperial-vs-metizport-m2-dust2.dem",
+      "processed_at": "2026-06-30T09:25:19.463729+00:00",
+      "round_count": 14,
+      "sample_count": 1668,
+      "source": "local"
+    },
+    "local_04f2c70e46e7a8de8392edf40747235be2efe447": {
+      "demo_path": "demos/extracted/3dmax-vs-betboom-anubis.dem",
+      "processed_at": "2026-06-30T08:29:33.622646+00:00",
+      "round_count": 16,
+      "sample_count": 1872,
+      "source": "local"
+    },
+    "local_05e4aef4d1a193df5591f88949de5ffc98f0b33b": {
+      "demo_path": "demos/extracted/faze-vs-the-mongolz-m2-anubis.dem",
+      "processed_at": "2026-06-30T09:09:52.855408+00:00",
+      "round_count": 23,
+      "sample_count": 2792,
+      "source": "local"
+    },
+    "local_05e4e92c18f1f367fc47031d1a9d84d146f425be": {
+      "demo_path": "demos/extracted/imperial-vs-legacy-m1-inferno.dem",
+      "processed_at": "2026-06-30T09:23:30.604838+00:00",
+      "round_count": 14,
+      "sample_count": 1767,
+      "source": "local"
+    },
+    "local_0680e770ccbced01d32327d9f4e275f2d33cce4e": {
+      "demo_path": "demos/extracted/3dmax-vs-nemiga-dust2.dem",
+      "processed_at": "2026-06-30T08:31:11.856577+00:00",
+      "round_count": 23,
+      "sample_count": 2497,
+      "source": "local"
+    },
+    "local_080cea25dab4213848241974563d07003eaf5ae5": {
+      "demo_path": "demos/extracted/tyloo-vs-metizport-mirage.dem",
+      "processed_at": "2026-06-30T10:09:01.269912+00:00",
+      "round_count": 16,
+      "sample_count": 1700,
+      "source": "local"
+    },
+    "local_0842e7698d83d73314f6ddbf831de0740e5a6d4d": {
+      "demo_path": "demos/extracted/fluxo-vs-ninjas-in-pyjamas-m2-train-p1.dem",
+      "processed_at": "2026-06-30T13:12:38.382027+00:00",
+      "round_count": 13,
+      "sample_count": 715,
+      "source": "local"
+    },
+    "local_088448409d31a1387b14fcdaf62e809c24788447": {
+      "demo_path": "demos/extracted/b8-vs-lynn-vision-m2-ancient.dem",
+      "processed_at": "2026-06-30T08:40:12.955921+00:00",
+      "round_count": 21,
+      "sample_count": 2129,
+      "source": "local"
+    },
+    "local_0894f0e16b573e9b17ad3224026740cd9368db82": {
+      "demo_path": "demos/extracted/furia-vs-lynn-vision-nuke.dem",
+      "processed_at": "2026-06-30T09:16:03.146114+00:00",
+      "round_count": 16,
+      "sample_count": 1913,
+      "source": "local"
+    },
+    "local_08ec0a5209530b2327bb87278ef80930084cc040": {
+      "demo_path": "demos/extracted/faze-vs-nrg-dust2.dem",
+      "processed_at": "2026-06-30T13:08:35.850175+00:00",
+      "round_count": 24,
+      "sample_count": 1372,
+      "source": "local"
+    },
+    "local_08ff4ef676ad7b45f2bf66891d5ab0ae16404ccf": {
+      "demo_path": "demos/extracted/heroic-vs-betboom-mirage.dem",
+      "processed_at": "2026-06-30T09:21:51.162372+00:00",
+      "round_count": 21,
+      "sample_count": 2206,
+      "source": "local"
+    },
+    "local_0934e070dc9c3ec28cd7dcd528b3f6e8ff273605": {
+      "demo_path": "demos/extracted/mibr-vs-betboom-m1-train.dem",
+      "processed_at": "2026-06-30T09:35:17.115566+00:00",
+      "round_count": 25,
+      "sample_count": 2612,
+      "source": "local"
+    },
+    "local_094c50d8aa76d02034a98d3bac60f12d320f1a52": {
+      "demo_path": "demos/extracted/flyquest-vs-fluxo-m1-overpass.dem",
+      "processed_at": "2026-06-30T13:13:54.126162+00:00",
+      "round_count": 16,
+      "sample_count": 1025,
+      "source": "local"
+    },
+    "local_096485ac972993dca4bb480b06c7107b2e091fee": {
+      "demo_path": "demos/extracted/imperial-vs-the-huns-m1-nuke.dem",
+      "processed_at": "2026-06-30T13:40:34.353906+00:00",
+      "round_count": 22,
+      "sample_count": 1549,
+      "source": "local"
+    },
+    "local_09e4f94ed2b2a49c1497b8637db9406a7001efc0": {
+      "demo_path": "demos/extracted/b8-vs-imperial-inferno.dem",
+      "processed_at": "2026-06-30T08:38:36.721604+00:00",
+      "round_count": 23,
+      "sample_count": 3065,
+      "source": "local"
+    },
+    "local_0a8a5a8f4537eb01059fe9d6a753a69a7f6f137c": {
+      "demo_path": "demos/extracted/falcons-vs-mibr-m1-ancient.dem",
+      "processed_at": "2026-06-30T08:59:59.105442+00:00",
+      "round_count": 18,
+      "sample_count": 2224,
+      "source": "local"
+    },
+    "local_0aa2c4816a142ab7a21fb721bdbcb0bd011d5461": {
+      "demo_path": "demos/extracted/b8-vs-lynn-vision-m3-anubis.dem",
+      "processed_at": "2026-06-30T08:40:49.339152+00:00",
+      "round_count": 19,
+      "sample_count": 2094,
+      "source": "local"
+    },
+    "local_0c5390c351564cf1e34c9e2a962e8c72a7d2d48f": {
+      "demo_path": "demos/extracted/mouz-vs-spirit-m1-mirage.dem",
+      "processed_at": "2026-06-30T14:04:26.530148+00:00",
+      "round_count": 19,
+      "sample_count": 1506,
+      "source": "local"
+    },
+    "local_0cac2fbb1d675b53985f38b89fc3eef656fa46b2": {
+      "demo_path": "demos/extracted/nemiga-vs-heroic-m2-dust2.dem",
+      "processed_at": "2026-06-30T09:48:15.642160+00:00",
+      "round_count": 21,
+      "sample_count": 2281,
+      "source": "local"
+    },
+    "local_0d8718c963731dbb37efd03f0c7fe8c0a216adc8": {
+      "demo_path": "demos/extracted/furia-vs-m80-dust2.dem",
+      "processed_at": "2026-06-30T09:17:30.496341+00:00",
+      "round_count": 20,
+      "sample_count": 2326,
+      "source": "local"
+    },
+    "local_0f0e76975fba82eb9d78f55d2a47a09742d088b5": {
+      "demo_path": "demos/extracted/mouz-vs-faze-m2-inferno.dem",
+      "processed_at": "2026-06-30T14:03:25.788087+00:00",
+      "round_count": 15,
+      "sample_count": 1170,
+      "source": "local"
+    },
+    "local_109fe79e97a0830554f2120d540bfd54e78ea53a": {
+      "demo_path": "demos/extracted/faze-vs-3dmax-m1-nuke.dem",
+      "processed_at": "2026-06-30T09:02:18.966703+00:00",
+      "round_count": 20,
+      "sample_count": 2456,
+      "source": "local"
+    },
+    "local_128f3e52c60a148262f12746705bb44dcf0abf32": {
+      "demo_path": "demos/extracted/flyquest-vs-fluxo-ancient.dem",
+      "processed_at": "2026-06-30T09:10:18.016576+00:00",
+      "round_count": 19,
+      "sample_count": 1740,
+      "source": "local"
+    },
+    "local_1365c545e54e89e49c21b92e14c199f3702384ac": {
+      "demo_path": "demos/extracted/liquid-vs-heroic-m2-inferno.dem",
+      "processed_at": "2026-06-30T13:47:30.823360+00:00",
+      "round_count": 24,
+      "sample_count": 1987,
+      "source": "local"
+    },
+    "local_13e419cb5bf846262dbf799f069a7c4f282c2366": {
+      "demo_path": "demos/extracted/heroic-vs-sharks-nuke.dem",
+      "processed_at": "2026-06-30T13:35:25.773638+00:00",
+      "round_count": 23,
+      "sample_count": 1474,
+      "source": "local"
+    },
+    "local_13f6fc2b05afa9d7353375a11f42cdf41657c0e4": {
+      "demo_path": "demos/extracted/3dmax-vs-pain-m2-nuke.dem",
+      "processed_at": "2026-06-30T08:33:15.664793+00:00",
+      "round_count": 27,
+      "sample_count": 3342,
+      "source": "local"
+    },
+    "local_149e7017bb5c6671c6f6c6167a693a3f2dd04e18": {
+      "demo_path": "demos/extracted/m80-vs-sharks-mirage-p1.dem",
+      "processed_at": "2026-06-30T13:55:15.538710+00:00",
+      "round_count": 18,
+      "sample_count": 1311,
+      "source": "local"
+    },
+    "local_158fa7f4bf9d50336168a55d08564add384e81e9": {
+      "demo_path": "demos/extracted/imperial-vs-legacy-m2-dust2.dem",
+      "processed_at": "2026-06-30T09:25:17.128660+00:00",
+      "round_count": 17,
+      "sample_count": 2087,
+      "source": "local"
+    },
+    "local_15cbeff0a7eb18a87cf66a8f1a054dc3528494a4": {
+      "demo_path": "demos/extracted/pain-vs-nemiga-dust2.dem",
+      "processed_at": "2026-06-30T09:54:59.884541+00:00",
+      "round_count": 19,
+      "sample_count": 2337,
+      "source": "local"
+    },
+    "local_16c8fda58b03447b76611b2b6f0799ba834dd918": {
+      "demo_path": "demos/extracted/imperial-vs-nemiga-train.dem",
+      "processed_at": "2026-06-30T09:27:10.053725+00:00",
+      "round_count": 21,
+      "sample_count": 2383,
+      "source": "local"
+    },
+    "local_1761eba6a30e29c8ee60b2e56e13a08062c07fd1": {
+      "demo_path": "demos/extracted/mibr-vs-tyloo-nuke.dem",
+      "processed_at": "2026-06-30T14:01:16.309248+00:00",
+      "round_count": 30,
+      "sample_count": 1945,
+      "source": "local"
+    },
+    "local_184288584b87ee2802d56a55655b199bc0a85bdd": {
+      "demo_path": "demos/extracted/og-vs-falcons-m2-nuke.dem",
+      "processed_at": "2026-06-30T09:51:43.902155+00:00",
+      "round_count": 22,
+      "sample_count": 2503,
+      "source": "local"
+    },
+    "local_1878356380a59cd0b5d7a590f0227316fd6b297b": {
+      "demo_path": "demos/extracted/heroic-vs-flyquest-m2-anubis.dem",
+      "processed_at": "2026-06-30T09:24:00.580751+00:00",
+      "round_count": 23,
+      "sample_count": 2470,
+      "source": "local"
+    },
+    "local_1888e95a20103cdf164c0326eb6234226e9d33ae": {
+      "demo_path": "demos/extracted/natus-vincere-vs-vitality-m2-nuke.dem",
+      "processed_at": "2026-06-30T09:46:35.731217+00:00",
+      "round_count": 23,
+      "sample_count": 2688,
+      "source": "local"
+    },
+    "local_18afbd70cec903aab9922158488393cb40f64f45": {
+      "demo_path": "demos/extracted/3dmax-vs-faze-m2-inferno.dem",
+      "processed_at": "2026-06-30T12:46:44.540809+00:00",
+      "round_count": 19,
+      "sample_count": 1410,
+      "source": "local"
+    },
+    "local_1947f374a3801205562ea9ab4a74397e206a1651": {
+      "demo_path": "demos/extracted/mouz-vs-vitality-m1-mirage.dem",
+      "processed_at": "2026-06-30T09:39:29.750406+00:00",
+      "round_count": 20,
+      "sample_count": 2132,
+      "source": "local"
+    },
+    "local_19a0b1cdf527da54241d609611efd6764c28755c": {
+      "demo_path": "demos/extracted/og-vs-falcons-m1-dust2.dem",
+      "processed_at": "2026-06-30T09:51:21.765024+00:00",
+      "round_count": 23,
+      "sample_count": 3005,
+      "source": "local"
+    },
+    "local_19e81b0005bf48705e6454ccb1a0b78ab73e7a99": {
+      "demo_path": "demos/extracted/tyloo-vs-lynn-vision-anubis.dem",
+      "processed_at": "2026-06-30T10:09:18.451096+00:00",
+      "round_count": 17,
+      "sample_count": 2053,
+      "source": "local"
+    },
+    "local_1a315ee93b7a8d9ef6bcbd42db59fd5f00c4dc3c": {
+      "demo_path": "demos/extracted/3dmax-vs-faze-m1-dust2.dem",
+      "processed_at": "2026-06-30T12:46:38.994562+00:00",
+      "round_count": 20,
+      "sample_count": 1283,
+      "source": "local"
+    },
+    "local_1a510eacc8de67a8d7d600bae16b4e7adab90d55": {
+      "demo_path": "demos/extracted/faze-vs-spirit-dust2.dem",
+      "processed_at": "2026-06-30T13:10:21.700124+00:00",
+      "round_count": 19,
+      "sample_count": 1221,
+      "source": "local"
+    },
+    "local_1aa55326790ceb731469c63877f2fe91380255f9": {
+      "demo_path": "demos/extracted/faze-vs-passion-ua-m2-mirage.dem",
+      "processed_at": "2026-06-30T13:10:10.902055+00:00",
+      "round_count": 25,
+      "sample_count": 1410,
+      "source": "local"
+    },
+    "local_1b051916c5059921659158afc46917dd2a3f6d7c": {
+      "demo_path": "demos/extracted/liquid-vs-tyloo-m3-inferno.dem",
+      "processed_at": "2026-06-30T13:51:44.130474+00:00",
+      "round_count": 31,
+      "sample_count": 2279,
+      "source": "local"
+    },
+    "local_1b27da9cfd50648301f799136c663fbf3dde1282": {
+      "demo_path": "demos/extracted/faze-vs-natus-vincere-m3-inferno.dem",
+      "processed_at": "2026-06-30T13:06:26.751693+00:00",
+      "round_count": 21,
+      "sample_count": 1673,
+      "source": "local"
+    },
+    "local_1b619a169c2d71b1ded109da7dc8550d665607cd": {
+      "demo_path": "demos/extracted/chinggis-warriors-vs-fluxo-m1-ancient.dem",
+      "processed_at": "2026-06-30T08:51:07.808634+00:00",
+      "round_count": 22,
+      "sample_count": 2309,
+      "source": "local"
+    },
+    "local_1b75fe7fe3a2683545ea40b76a2450d1f236cf13": {
+      "demo_path": "demos/extracted/pain-vs-furia-dust2.dem",
+      "processed_at": "2026-06-30T09:55:07.964198+00:00",
+      "round_count": 23,
+      "sample_count": 2699,
+      "source": "local"
+    },
+    "local_1cb2163e0647174cab8f8cfa2360b1592c0862de": {
+      "demo_path": "demos/extracted/legacy-vs-rare-atom-dust2.dem",
+      "processed_at": "2026-06-30T13:41:59.097942+00:00",
+      "round_count": 19,
+      "sample_count": 1377,
+      "source": "local"
+    },
+    "local_1d57396fb7eccb2049b63dba9341202c22e4dcfa": {
+      "demo_path": "demos/extracted/m80-vs-b8-m1-ancient.dem",
+      "processed_at": "2026-06-30T13:51:23.603563+00:00",
+      "round_count": 24,
+      "sample_count": 1823,
+      "source": "local"
+    },
+    "local_1daf3b926f1dd2e62afa25b7c37202fbf1af9e2d": {
+      "demo_path": "demos/extracted/3dmax-vs-legacy-inferno.dem",
+      "processed_at": "2026-06-30T08:29:50.013603+00:00",
+      "round_count": 19,
+      "sample_count": 2420,
+      "source": "local"
+    },
+    "local_1f34d9b7c3a00084972fae1f77b9d6c2c1ad25ae": {
+      "demo_path": "demos/extracted/3dmax-vs-natus-vincere-inferno.dem",
+      "processed_at": "2026-06-30T08:31:36.886086+00:00",
+      "round_count": 29,
+      "sample_count": 3718,
+      "source": "local"
+    },
+    "local_1fd7b5483ba190f6695192a6aaa7106c5cd6c45a": {
+      "demo_path": "demos/extracted/mibr-vs-liquid-m2-mirage.dem",
+      "processed_at": "2026-06-30T14:00:16.444388+00:00",
+      "round_count": 37,
+      "sample_count": 2527,
+      "source": "local"
+    },
+    "local_2010b59ab414295fe32f3827b9b3dbeefb3db331": {
+      "demo_path": "demos/extracted/b8-vs-3dmax-m2-ancient.dem",
+      "processed_at": "2026-06-30T12:52:38.107416+00:00",
+      "round_count": 25,
+      "sample_count": 1854,
+      "source": "local"
+    },
+    "local_20b655c907922de524d1ac219046dbb7ec4fff96": {
+      "demo_path": "demos/extracted/furia-vs-b8-m3-dust2.dem",
+      "processed_at": "2026-06-30T09:15:53.853557+00:00",
+      "round_count": 19,
+      "sample_count": 2157,
+      "source": "local"
+    },
+    "local_21d18af98be632e88fca5dc578e2e0d16e708b12": {
+      "demo_path": "demos/extracted/b8-vs-tyloo-mirage-p2.dem",
+      "processed_at": "2026-06-30T13:00:09.418802+00:00",
+      "round_count": 18,
+      "sample_count": 1312,
+      "source": "local"
+    },
+    "local_23968e6cb62ca9bef5b5d52632658a802094fe6d": {
+      "demo_path": "demos/extracted/gaimin-gladiators-vs-heroic-m2-inferno.dem",
+      "processed_at": "2026-06-30T13:27:54.009305+00:00",
+      "round_count": 19,
+      "sample_count": 1635,
+      "source": "local"
+    },
+    "local_250e469be3eb4287f1a666a8aeb7995d15d2a1a0": {
+      "demo_path": "demos/extracted/og-vs-nrg-m2-nuke.dem",
+      "processed_at": "2026-06-30T09:52:41.644097+00:00",
+      "round_count": 15,
+      "sample_count": 1590,
+      "source": "local"
+    },
+    "local_259a9cb2659896d662b317fb0feae5dea8711ace": {
+      "demo_path": "demos/extracted/betboom-vs-nemiga-train.dem",
+      "processed_at": "2026-06-30T08:50:08.114833+00:00",
+      "round_count": 19,
+      "sample_count": 2078,
+      "source": "local"
+    },
+    "local_2694f3bf818bf535d7e57e4fe91447bb8a8cba9a": {
+      "demo_path": "demos/extracted/gaimin-gladiators-vs-heroic-m1-dust2.dem",
+      "processed_at": "2026-06-30T13:27:03.211977+00:00",
+      "round_count": 18,
+      "sample_count": 1396,
+      "source": "local"
+    },
+    "local_287fe80c94e8b400dfb9a35162d83333e3b24c6d": {
+      "demo_path": "demos/extracted/b8-vs-wildcard-m3-inferno.dem",
+      "processed_at": "2026-06-30T08:43:50.092705+00:00",
+      "round_count": 14,
+      "sample_count": 1536,
+      "source": "local"
+    },
+    "local_2a1e94eb7d464dd190545d81245ce67ab705884c": {
+      "demo_path": "demos/extracted/vitality-vs-themongolz-nuke.dem",
+      "processed_at": "2026-06-30T10:19:01.636312+00:00",
+      "round_count": 21,
+      "sample_count": 2111,
+      "source": "local"
+    },
+    "local_2b0e10711794630077aee1b55d79a59e8fee360a": {
+      "demo_path": "demos/extracted/faze-vs-legacy-m1-mirage.dem",
+      "processed_at": "2026-06-30T09:04:19.682711+00:00",
+      "round_count": 19,
+      "sample_count": 2089,
+      "source": "local"
+    },
+    "local_2b726e01c95c2028fa81fbf9121de5e58399bbed": {
+      "demo_path": "demos/extracted/falcons-vs-mibr-m2-nuke.dem",
+      "processed_at": "2026-06-30T09:02:17.485768+00:00",
+      "round_count": 21,
+      "sample_count": 2508,
+      "source": "local"
+    },
+    "local_2df34d8d788b003622e2bb16acafefb78a8e67f6": {
+      "demo_path": "demos/extracted/chinggis-warriors-vs-lynn-vision-m3-ancient.dem",
+      "processed_at": "2026-06-30T08:56:15.322887+00:00",
+      "round_count": 28,
+      "sample_count": 3061,
+      "source": "local"
+    },
+    "local_2ec71bc70f0a98acafdcdc9d1886a5c67c95ade6": {
+      "demo_path": "demos/extracted/big-vs-gaimin-gladiators-nuke.dem",
+      "processed_at": "2026-06-30T13:01:58.776691+00:00",
+      "round_count": 14,
+      "sample_count": 1100,
+      "source": "local"
+    },
+    "local_2f9de9c4433ba749f0953af623b16979e6c1d786": {
+      "demo_path": "demos/extracted/spirit-vs-pain-dust2.dem",
+      "processed_at": "2026-06-30T10:02:35.021265+00:00",
+      "round_count": 15,
+      "sample_count": 2174,
+      "source": "local"
+    },
+    "local_313bb6c44739c0f36a8814491bfebbc93110135c": {
+      "demo_path": "demos/extracted/b8-vs-3dmax-m3-dust2.dem",
+      "processed_at": "2026-06-30T12:51:50.730722+00:00",
+      "round_count": 22,
+      "sample_count": 1153,
+      "source": "local"
+    },
+    "local_315a63ee5e8334f387d91ec846b9ab61d8e85d65": {
+      "demo_path": "demos/extracted/imperial-vs-falcons-mirage.dem",
+      "processed_at": "2026-06-30T13:35:35.260685+00:00",
+      "round_count": 15,
+      "sample_count": 989,
+      "source": "local"
+    },
+    "local_31ec0aa7406f60d75cfedd61329c55b9acd209fa": {
+      "demo_path": "demos/extracted/faze-vs-mibr-m1-anubis.dem",
+      "processed_at": "2026-06-30T09:05:43.454970+00:00",
+      "round_count": 17,
+      "sample_count": 1889,
+      "source": "local"
+    },
+    "local_333e12ec40acca3711a696d14ebe643cf1345c33": {
+      "demo_path": "demos/extracted/faze-vs-lynn-vision-nuke-p2.dem",
+      "processed_at": "2026-06-30T13:05:12.691878+00:00",
+      "round_count": 21,
+      "sample_count": 880,
+      "source": "local"
+    },
+    "local_33612d516586c86bfe98b8b789904e528dc46009": {
+      "demo_path": "demos/extracted/heroic-vs-flyquest-m3-mirage.dem",
+      "processed_at": "2026-06-30T09:23:25.115059+00:00",
+      "round_count": 18,
+      "sample_count": 2105,
+      "source": "local"
+    },
+    "local_349f6dccc01a98c310cd1fb92d51d197bd1eb1ee": {
+      "demo_path": "demos/extracted/complexity-vs-tyloo-m1-train.dem",
+      "processed_at": "2026-06-30T08:58:11.286299+00:00",
+      "round_count": 20,
+      "sample_count": 2104,
+      "source": "local"
+    },
+    "local_37f572ee4105d2c8bfb6a9287ac286d7a3d209c3": {
+      "demo_path": "demos/extracted/pain-vs-the-mongolz-m1-mirage.dem",
+      "processed_at": "2026-06-30T09:55:33.033573+00:00",
+      "round_count": 17,
+      "sample_count": 1889,
+      "source": "local"
+    },
+    "local_388487f90cbe751fa915a72168fd84feb9fdb55e": {
+      "demo_path": "demos/extracted/wildcard-vs-metizport-inferno.dem",
+      "processed_at": "2026-06-30T10:19:55.842143+00:00",
+      "round_count": 13,
+      "sample_count": 1578,
+      "source": "local"
+    },
+    "local_38fb1f61a94eba9d79abe298f18d9135f7ba5d75": {
+      "demo_path": "demos/extracted/mouz-vs-falcons-m2-inferno.dem",
+      "processed_at": "2026-06-30T14:02:01.656332+00:00",
+      "round_count": 20,
+      "sample_count": 1530,
+      "source": "local"
+    },
+    "local_393a5ae280d579167709a47904d4627fe3f54cdf": {
+      "demo_path": "demos/extracted/imperial-vs-the-mongolz-dust2.dem",
+      "processed_at": "2026-06-30T13:42:23.923328+00:00",
+      "round_count": 30,
+      "sample_count": 2696,
+      "source": "local"
+    },
+    "local_3b84214cfbbd830ca0b8c914400da4b506ad6c53": {
+      "demo_path": "demos/extracted/chinggis-warriors-vs-fluxo-m2-mirage.dem",
+      "processed_at": "2026-06-30T08:52:28.326988+00:00",
+      "round_count": 23,
+      "sample_count": 2369,
+      "source": "local"
+    },
+    "local_3c2a014178888ff282745b4dbe00bc5578eaa173": {
+      "demo_path": "demos/extracted/m80-vs-lynn-vision-inferno.dem",
+      "processed_at": "2026-06-30T13:53:43.629951+00:00",
+      "round_count": 21,
+      "sample_count": 1846,
+      "source": "local"
+    },
+    "local_3dfe980d359c4d4d18969de97cdace727a966152": {
+      "demo_path": "demos/extracted/faze-vs-the-mongolz-mirage.dem",
+      "processed_at": "2026-06-30T13:10:27.506559+00:00",
+      "round_count": 21,
+      "sample_count": 1234,
+      "source": "local"
+    },
+    "local_3e621d318417dc3d7f399632d5877e119bdad066": {
+      "demo_path": "demos/extracted/gamerlegion-vs-nrg-inferno.dem",
+      "processed_at": "2026-06-30T13:33:30.993374+00:00",
+      "round_count": 23,
+      "sample_count": 1824,
+      "source": "local"
+    },
+    "local_3eb62983d9e2f9690e5da7b15dff7651e80c768b": {
+      "demo_path": "demos/extracted/liquid-vs-astralis-m1-nuke.dem",
+      "processed_at": "2026-06-30T13:43:09.399899+00:00",
+      "round_count": 21,
+      "sample_count": 1101,
+      "source": "local"
+    },
+    "local_3f1bb81c7828705f986dcbc0c9c74d65d8bc4fb4": {
+      "demo_path": "demos/extracted/liquid-vs-tyloo-m1-ancient.dem",
+      "processed_at": "2026-06-30T13:48:10.940148+00:00",
+      "round_count": 23,
+      "sample_count": 1511,
+      "source": "local"
+    },
+    "local_3f7a15ca2e090c5aaaa0c819a6333df673fc6478": {
+      "demo_path": "demos/extracted/legacy-vs-red-canids-nuke.dem",
+      "processed_at": "2026-06-30T13:43:18.550061+00:00",
+      "round_count": 20,
+      "sample_count": 1544,
+      "source": "local"
+    },
+    "local_3f8d612517124a41edaff25fae151432c06ba5d1": {
+      "demo_path": "demos/extracted/natus-vincere-vs-g2-m3-inferno.dem",
+      "processed_at": "2026-06-30T09:46:54.887277+00:00",
+      "round_count": 34,
+      "sample_count": 4203,
+      "source": "local"
+    },
+    "local_42225ab636ebcdb37330d6ead28ca00608127712": {
+      "demo_path": "demos/extracted/vitality-vs-mibr-m1-mirage.dem",
+      "processed_at": "2026-06-30T10:15:41.668570+00:00",
+      "round_count": 15,
+      "sample_count": 1600,
+      "source": "local"
+    },
+    "local_42ccf138b3bc44ae3d8a91ca5b86a9617b847e84": {
+      "demo_path": "demos/extracted/g2-vs-3dmax-nuke.dem",
+      "processed_at": "2026-06-30T09:20:35.668196+00:00",
+      "round_count": 17,
+      "sample_count": 1924,
+      "source": "local"
+    },
+    "local_438535fab50989f8e0f637c14345af55dedce442": {
+      "demo_path": "demos/extracted/b8-vs-heroic-dust2.dem",
+      "processed_at": "2026-06-30T08:38:21.964107+00:00",
+      "round_count": 22,
+      "sample_count": 2541,
+      "source": "local"
+    },
+    "local_440800f2e92a944dbaecd4cd6d02d8228069e9ea": {
+      "demo_path": "demos/extracted/mibr-vs-legacy-nuke.dem",
+      "processed_at": "2026-06-30T09:35:48.982461+00:00",
+      "round_count": 22,
+      "sample_count": 2774,
+      "source": "local"
+    },
+    "local_443c2676faf8ec76b4cd031ca726ad735ef99e3e": {
+      "demo_path": "demos/extracted/3dmax-vs-vitality-nuke.dem",
+      "processed_at": "2026-06-30T08:33:24.737778+00:00",
+      "round_count": 14,
+      "sample_count": 1681,
+      "source": "local"
+    },
+    "local_4575817110f02f0ee383026bd1eab0e3d2112aca": {
+      "demo_path": "demos/extracted/spirit-vs-mouz-m3-nuke.dem",
+      "processed_at": "2026-06-30T10:00:50.664584+00:00",
+      "round_count": 22,
+      "sample_count": 2589,
+      "source": "local"
+    },
+    "local_464cfdcc8a39b524169e98ac6d3f47ed0cb00478": {
+      "demo_path": "demos/extracted/complexity-vs-nrg-inferno.dem",
+      "processed_at": "2026-06-30T08:57:32.129267+00:00",
+      "round_count": 21,
+      "sample_count": 2401,
+      "source": "local"
+    },
+    "local_46e6a1bbb9187bc09ec313cec3fa50f56d283055": {
+      "demo_path": "demos/extracted/aurora-vs-astralis-m1-nuke.dem",
+      "processed_at": "2026-06-30T12:49:24.856544+00:00",
+      "round_count": 25,
+      "sample_count": 1886,
+      "source": "local"
+    },
+    "local_474d963ecd06e04ddeaa67780738f87a84f8c922": {
+      "demo_path": "demos/extracted/liquid-vs-b8-mirage.dem",
+      "processed_at": "2026-06-30T13:43:57.380409+00:00",
+      "round_count": 21,
+      "sample_count": 1405,
+      "source": "local"
+    },
+    "local_474e720df74531e4182061dad48471e83c654d89": {
+      "demo_path": "demos/extracted/imperial-vs-metizport-m1-nuke.dem",
+      "processed_at": "2026-06-30T09:26:32.325697+00:00",
+      "round_count": 28,
+      "sample_count": 3180,
+      "source": "local"
+    },
+    "local_484f5955597a48e78a51a6c4919e34039b88e4b3": {
+      "demo_path": "demos/extracted/m80-vs-nrg-m1-dust2.dem",
+      "processed_at": "2026-06-30T13:53:41.090447+00:00",
+      "round_count": 21,
+      "sample_count": 1443,
+      "source": "local"
+    },
+    "local_4b663b0a454afe3604b8258c651bc0a272267279": {
+      "demo_path": "demos/extracted/lynn-vision-vs-legacy-dust2.dem",
+      "processed_at": "2026-06-30T09:30:28.744057+00:00",
+      "round_count": 19,
+      "sample_count": 2484,
+      "source": "local"
+    },
+    "local_4c2346613a456f8f560b761997ba21e46d1b0df3": {
+      "demo_path": "demos/extracted/betboom-vs-liquid-dust2.dem",
+      "processed_at": "2026-06-30T13:02:09.268503+00:00",
+      "round_count": 22,
+      "sample_count": 1337,
+      "source": "local"
+    },
+    "local_4c9792d59f0b59139d2a1115735fecb45e5deafd": {
+      "demo_path": "demos/extracted/spirit-vs-mouz-m1-mirage.dem",
+      "processed_at": "2026-06-30T10:03:19.997048+00:00",
+      "round_count": 45,
+      "sample_count": 5337,
+      "source": "local"
+    },
+    "local_4cd566a48a2645ad8159889a08af503143e7efe7": {
+      "demo_path": "demos/extracted/liquid-vs-flyquest-m2-inferno.dem",
+      "processed_at": "2026-06-30T13:45:43.377193+00:00",
+      "round_count": 20,
+      "sample_count": 1521,
+      "source": "local"
+    },
+    "local_4d2953b7bcb5d00d3811ada2d43c9fb539f1e67d": {
+      "demo_path": "demos/extracted/imperial-vs-m80-m2-dust2.dem",
+      "processed_at": "2026-06-30T13:37:10.103576+00:00",
+      "round_count": 16,
+      "sample_count": 1176,
+      "source": "local"
+    },
+    "local_4ed7d0a03aba36ca3155e83ae28b6ec9e976ffe0": {
+      "demo_path": "demos/extracted/fluxo-vs-faze-m3-mirage.dem",
+      "processed_at": "2026-06-30T13:12:28.919931+00:00",
+      "round_count": 25,
+      "sample_count": 1570,
+      "source": "local"
+    },
+    "local_4f4b88d40caa84d32b5fe0f989b3e72819d9193b": {
+      "demo_path": "demos/extracted/the-mongolz-vs-liquid-ancient.dem",
+      "processed_at": "2026-06-30T10:05:07.208819+00:00",
+      "round_count": 19,
+      "sample_count": 1771,
+      "source": "local"
+    },
+    "local_4fa4ed54b50f46b4f4dfad003bf64f2b7172d97d": {
+      "demo_path": "demos/extracted/fluxo-vs-faze-m2-nuke.dem",
+      "processed_at": "2026-06-30T13:12:05.383104+00:00",
+      "round_count": 21,
+      "sample_count": 1440,
+      "source": "local"
+    },
+    "local_502b8f6876f181fd8f0570ef5a80c3ee0b8f1932": {
+      "demo_path": "demos/extracted/fnatic-vs-imperial-dust2.dem",
+      "processed_at": "2026-06-30T13:18:05.962958+00:00",
+      "round_count": 24,
+      "sample_count": 1794,
+      "source": "local"
+    },
+    "local_50d0e3fafb061202049cc560673864dc6ba7b105": {
+      "demo_path": "demos/extracted/furia-vs-b8-m1-mirage.dem",
+      "processed_at": "2026-06-30T09:14:37.138752+00:00",
+      "round_count": 15,
+      "sample_count": 1739,
+      "source": "local"
+    },
+    "local_52061dde925aab62a4084ffa9377b3d8939fbddd": {
+      "demo_path": "demos/extracted/lynn-vision-vs-wildcard-nuke.dem",
+      "processed_at": "2026-06-30T09:34:54.445252+00:00",
+      "round_count": 35,
+      "sample_count": 3756,
+      "source": "local"
+    },
+    "local_5322ecc2f83fd6f26e65d1e3208d16a862b3c11c": {
+      "demo_path": "demos/extracted/flyquest-vs-3dmax-inferno.dem",
+      "processed_at": "2026-06-30T13:14:12.928099+00:00",
+      "round_count": 22,
+      "sample_count": 1671,
+      "source": "local"
+    },
+    "local_5339d56cab7aa40116990b2f33f06fd694a6b3fd": {
+      "demo_path": "demos/extracted/aurora-vs-mouz-m1-train.dem",
+      "processed_at": "2026-06-30T08:35:55.244867+00:00",
+      "round_count": 22,
+      "sample_count": 2814,
+      "source": "local"
+    },
+    "local_544238c5b10d9e8c673a560c06889f8176db86d1": {
+      "demo_path": "demos/extracted/aurora-vs-astralis-m3-mirage.dem",
+      "processed_at": "2026-06-30T12:49:37.807897+00:00",
+      "round_count": 25,
+      "sample_count": 1808,
+      "source": "local"
+    },
+    "local_54b1e8b387caa05a845ca13b4a93b9bafaa2715d": {
+      "demo_path": "demos/extracted/mibr-vs-lynn-vision-m1-anubis-p2.dem",
+      "processed_at": "2026-06-30T13:57:49.417808+00:00",
+      "round_count": 16,
+      "sample_count": 1213,
+      "source": "local"
+    },
+    "local_558ed5c3a9c381848d5c3397e14d1fbf442f229d": {
+      "demo_path": "demos/extracted/natus-vincere-vs-nemiga-train.dem",
+      "processed_at": "2026-06-30T09:44:29.414717+00:00",
+      "round_count": 19,
+      "sample_count": 2187,
+      "source": "local"
+    },
+    "local_5604d4daa5fa233be28bb6efd6a876adc5e04487": {
+      "demo_path": "demos/extracted/faze-vs-natus-vincere-m2-nuke.dem",
+      "processed_at": "2026-06-30T13:05:28.667331+00:00",
+      "round_count": 25,
+      "sample_count": 1850,
+      "source": "local"
+    },
+    "local_571eec6be57e5c3946c50f9cfd74a44f90fce7b7": {
+      "demo_path": "demos/extracted/nrg-vs-lynn-vision-m1-dust2.dem",
+      "processed_at": "2026-06-30T09:52:44.701420+00:00",
+      "round_count": 41,
+      "sample_count": 4652,
+      "source": "local"
+    },
+    "local_584eed40a22cf3a0d2ae0c36085ee9ef3bdb3c46": {
+      "demo_path": "demos/extracted/virtus-pro-vs-vitality-m2-dust2.dem",
+      "processed_at": "2026-06-30T10:14:40.483495+00:00",
+      "round_count": 18,
+      "sample_count": 2118,
+      "source": "local"
+    },
+    "local_592cccb4f20f1ca82489d6b510fc5015be7c9772": {
+      "demo_path": "demos/extracted/fnatic-vs-imperial-train.dem",
+      "processed_at": "2026-06-30T13:16:47.420995+00:00",
+      "round_count": 17,
+      "sample_count": 1122,
+      "source": "local"
+    },
+    "local_5948c12881c3d791470cb6fca727a7ed6f6021cc": {
+      "demo_path": "demos/extracted/gamerlegion-vs-big-m1-overpass.dem",
+      "processed_at": "2026-06-30T13:31:10.538865+00:00",
+      "round_count": 30,
+      "sample_count": 2270,
+      "source": "local"
+    },
+    "local_59551ceb90a5509dd05f9e972654864cdbe98027": {
+      "demo_path": "demos/extracted/og-vs-tyloo-ancient.dem",
+      "processed_at": "2026-06-30T09:53:03.567334+00:00",
+      "round_count": 16,
+      "sample_count": 1735,
+      "source": "local"
+    },
+    "local_59d6c9f1a8203c8bf886e965ce511bd298b04489": {
+      "demo_path": "demos/extracted/pain-vs-virtus-pro-m2-mirage.dem",
+      "processed_at": "2026-06-30T09:59:21.712310+00:00",
+      "round_count": 28,
+      "sample_count": 3418,
+      "source": "local"
+    },
+    "local_5a3daef497a4b36185c33c9b7f6035c95d9fb5c8": {
+      "demo_path": "demos/extracted/virtus-pro-vs-pain-m3-dust2.dem",
+      "processed_at": "2026-06-30T10:14:38.518172+00:00",
+      "round_count": 23,
+      "sample_count": 2961,
+      "source": "local"
+    },
+    "local_5b16187b1de0004321979f157fbd4637dbe7dc01": {
+      "demo_path": "demos/extracted/natus-vincere-vs-g2-m2-anubis.dem",
+      "processed_at": "2026-06-30T09:43:36.624427+00:00",
+      "round_count": 21,
+      "sample_count": 2447,
+      "source": "local"
+    },
+    "local_5b67a0bc981151925d5a6fb0db077fdd3de9a05a": {
+      "demo_path": "demos/extracted/imperial-vs-m80-m1-mirage.dem",
+      "processed_at": "2026-06-30T13:38:24.708184+00:00",
+      "round_count": 25,
+      "sample_count": 1725,
+      "source": "local"
+    },
+    "local_5b8965303bc959dd649ea2baced92103bb78fdf0": {
+      "demo_path": "demos/extracted/mouz-vs-vitality-m2-inferno.dem",
+      "processed_at": "2026-06-30T09:39:21.047542+00:00",
+      "round_count": 16,
+      "sample_count": 1904,
+      "source": "local"
+    },
+    "local_5c1932ede4561df3dbce1ee5383b94ba7cbfda47": {
+      "demo_path": "demos/extracted/imperial-vs-flyquest-inferno.dem",
+      "processed_at": "2026-06-30T13:37:33.575782+00:00",
+      "round_count": 21,
+      "sample_count": 2006,
+      "source": "local"
+    },
+    "local_5cc6eb1151fc0d9deadbd7002b5a66bad00d8558": {
+      "demo_path": "demos/extracted/b8-vs-lynn-vision-m1-dust2.dem",
+      "processed_at": "2026-06-30T08:39:14.136236+00:00",
+      "round_count": 14,
+      "sample_count": 1567,
+      "source": "local"
+    },
+    "local_5f087a370145e9a5057f528f5abd21bb1a014424": {
+      "demo_path": "demos/extracted/fnatic-vs-passion-ua-m2-inferno.dem",
+      "processed_at": "2026-06-30T13:18:51.801505+00:00",
+      "round_count": 21,
+      "sample_count": 1144,
+      "source": "local"
+    },
+    "local_5f6818194af734cafe48cd8a7753b4e68117c5be": {
+      "demo_path": "demos/extracted/gamerlegion-vs-flyquest-inferno.dem",
+      "processed_at": "2026-06-30T13:32:46.550299+00:00",
+      "round_count": 24,
+      "sample_count": 1923,
+      "source": "local"
+    },
+    "local_613580d88fb369b25d866d580422f3269b4618dd": {
+      "demo_path": "demos/extracted/heroic-vs-nrg-dust2.dem",
+      "processed_at": "2026-06-30T09:23:29.269896+00:00",
+      "round_count": 17,
+      "sample_count": 1807,
+      "source": "local"
+    },
+    "local_617834fe36454a488a366692fdc43a0278eb9ed5": {
+      "demo_path": "demos/extracted/furia-vs-pain-m3-inferno.dem",
+      "processed_at": "2026-06-30T09:20:05.483024+00:00",
+      "round_count": 27,
+      "sample_count": 3260,
+      "source": "local"
+    },
+    "local_61fa684b0be44e6de7b4ad1b9cd4f672be0851c4": {
+      "demo_path": "demos/extracted/fnatic-vs-passion-ua-m1-overpass.dem",
+      "processed_at": "2026-06-30T13:19:27.109220+00:00",
+      "round_count": 25,
+      "sample_count": 1986,
+      "source": "local"
+    },
+    "local_620b915810e838ef123fbc14bfbb123d9252fdb8": {
+      "demo_path": "demos/extracted/b8-vs-parivision-inferno.dem",
+      "processed_at": "2026-06-30T12:58:20.601192+00:00",
+      "round_count": 25,
+      "sample_count": 1915,
+      "source": "local"
+    },
+    "local_63297bf1ae35b194f33e3c38b5b6decf7f6e5183": {
+      "demo_path": "demos/extracted/gamerlegion-vs-fluxo-nuke.dem",
+      "processed_at": "2026-06-30T13:30:46.326083+00:00",
+      "round_count": 24,
+      "sample_count": 1571,
+      "source": "local"
+    },
+    "local_634faf847a59e3c32826b3612fe39244f7743551": {
+      "demo_path": "demos/extracted/flyquest-vs-tyloo-m1-inferno.dem",
+      "processed_at": "2026-06-30T09:13:25.828156+00:00",
+      "round_count": 22,
+      "sample_count": 2683,
+      "source": "local"
+    },
+    "local_63bd172fabe94bb209a13f98e7cbca246f7e7abc": {
+      "demo_path": "demos/extracted/furia-vs-natus-vincere-nuke.dem",
+      "processed_at": "2026-06-30T13:23:16.992002+00:00",
+      "round_count": 16,
+      "sample_count": 755,
+      "source": "local"
+    },
+    "local_63c2ae2dea317e3324ad274639fbc82c687e5a8a": {
+      "demo_path": "demos/extracted/gamerlegion-vs-betboom-m2-ancient.dem",
+      "processed_at": "2026-06-30T13:29:20.615780+00:00",
+      "round_count": 21,
+      "sample_count": 1266,
+      "source": "local"
+    },
+    "local_63cfcf507f937f4f97ed239dd35697c20f2bb39e": {
+      "demo_path": "demos/extracted/flyquest-vs-fluxo-m2-inferno.dem",
+      "processed_at": "2026-06-30T13:15:32.425793+00:00",
+      "round_count": 17,
+      "sample_count": 1307,
+      "source": "local"
+    },
+    "local_64dde73736eb17089b9b7df7065e7874e987f463": {
+      "demo_path": "demos/extracted/faze-vs-ninjas-in-pyjamas-overpass.dem",
+      "processed_at": "2026-06-30T13:08:09.150493+00:00",
+      "round_count": 22,
+      "sample_count": 1811,
+      "source": "local"
+    },
+    "local_65a495ec2581a8e3b11beba18262a3960aaa904a": {
+      "demo_path": "demos/extracted/legacy-vs-mouz-m2-inferno.dem",
+      "processed_at": "2026-06-30T09:30:09.583615+00:00",
+      "round_count": 23,
+      "sample_count": 2592,
+      "source": "local"
+    },
+    "local_67ee0c2340db7059a1586e8498e7a0eabffde7e3": {
+      "demo_path": "demos/extracted/lynn-vision-vs-nemiga-dust2.dem",
+      "processed_at": "2026-06-30T09:32:32.548511+00:00",
+      "round_count": 22,
+      "sample_count": 2544,
+      "source": "local"
+    },
+    "local_6ad79ed89e7775e4972c914b805dac74add7a8fa": {
+      "demo_path": "demos/extracted/faze-vs-the-mongolz-m1-mirage.dem",
+      "processed_at": "2026-06-30T09:08:07.355658+00:00",
+      "round_count": 22,
+      "sample_count": 2322,
+      "source": "local"
+    },
+    "local_6bd34ba61c03a1319cf4ad253c2af94feef81f48": {
+      "demo_path": "demos/extracted/spirit-vs-natus-vincere-m1-anubis.dem",
+      "processed_at": "2026-06-30T10:02:24.748892+00:00",
+      "round_count": 23,
+      "sample_count": 3158,
+      "source": "local"
+    },
+    "local_6c5eb1805165d0e87615c1b7778d4b7460b3f109": {
+      "demo_path": "demos/extracted/fnatic-vs-b8-ancient.dem",
+      "processed_at": "2026-06-30T13:16:45.740572+00:00",
+      "round_count": 25,
+      "sample_count": 1616,
+      "source": "local"
+    },
+    "local_6d7c51b9ba93ec100ff58387a1081ba9b616075a": {
+      "demo_path": "demos/extracted/faze-vs-ninjas-in-pyjamas-m1-inferno.dem",
+      "processed_at": "2026-06-30T13:07:25.488694+00:00",
+      "round_count": 29,
+      "sample_count": 1833,
+      "source": "local"
+    },
+    "local_6e8e9f67d7deacc2dbfc331916ea4ef954e09935": {
+      "demo_path": "demos/extracted/furia-vs-imperial-dust2.dem",
+      "processed_at": "2026-06-30T13:21:51.656601+00:00",
+      "round_count": 19,
+      "sample_count": 1721,
+      "source": "local"
+    },
+    "local_704347e850063cf820a26da41a08a2c7ae7e014f": {
+      "demo_path": "demos/extracted/vitality-vs-legacy-inferno.dem",
+      "processed_at": "2026-06-30T10:16:12.109375+00:00",
+      "round_count": 15,
+      "sample_count": 2101,
+      "source": "local"
+    },
+    "local_7079e615ba8dad8e42eda18c2b3d16a820f020a3": {
+      "demo_path": "demos/extracted/complexity-vs-fluxo-inferno.dem",
+      "processed_at": "2026-06-30T08:57:18.861559+00:00",
+      "round_count": 21,
+      "sample_count": 2485,
+      "source": "local"
+    },
+    "local_7181ba24541e3a84768b036c6ad5805d1f7b6a53": {
+      "demo_path": "demos/extracted/betboom-vs-flyquest-mirage.dem",
+      "processed_at": "2026-06-30T08:47:35.432469+00:00",
+      "round_count": 18,
+      "sample_count": 2181,
+      "source": "local"
+    },
+    "local_7184e9663d94c076bf2a06dbdddcd8438b2639a4": {
+      "demo_path": "demos/extracted/b8-vs-thunder-downunder-dust2.dem",
+      "processed_at": "2026-06-30T13:01:00.300875+00:00",
+      "round_count": 24,
+      "sample_count": 1561,
+      "source": "local"
+    },
+    "local_71c3ea29bb1d9e314a01dc884f59bf4a672ee285": {
+      "demo_path": "demos/extracted/virtus-pro-vs-pain-m2-inferno.dem",
+      "processed_at": "2026-06-30T10:12:46.225383+00:00",
+      "round_count": 18,
+      "sample_count": 2383,
+      "source": "local"
+    },
+    "local_729b888722955efc4e419044e43913fecaa8a46b": {
+      "demo_path": "demos/extracted/liquid-vs-the-mongolz-inferno.dem",
+      "processed_at": "2026-06-30T13:48:16.060259+00:00",
+      "round_count": 23,
+      "sample_count": 1675,
+      "source": "local"
+    },
+    "local_72c305f8f8cef21b10da8b7e2c6b419d2cffd960": {
+      "demo_path": "demos/extracted/flyquest-vs-nemiga-m2-inferno.dem",
+      "processed_at": "2026-06-30T09:13:16.776407+00:00",
+      "round_count": 23,
+      "sample_count": 2873,
+      "source": "local"
+    },
+    "local_7379328419f436d197ccde23406257e339cddb4e": {
+      "demo_path": "demos/extracted/the-mongolz-vs-g2-m1-ancient.dem",
+      "processed_at": "2026-06-30T10:03:44.932752+00:00",
+      "round_count": 18,
+      "sample_count": 1841,
+      "source": "local"
+    },
+    "local_7390f1445c1f1bbebd5fddb0b9c5c218c471ca5f": {
+      "demo_path": "demos/extracted/og-vs-falcons-m3-mirage.dem",
+      "processed_at": "2026-06-30T09:52:05.373938+00:00",
+      "round_count": 18,
+      "sample_count": 2044,
+      "source": "local"
+    },
+    "local_74023f02848fb71bdf776cfc85ae43fb8036c80b": {
+      "demo_path": "demos/extracted/legacy-vs-lynn-vision-m2-inferno.dem",
+      "processed_at": "2026-06-30T09:27:45.249305+00:00",
+      "round_count": 15,
+      "sample_count": 1750,
+      "source": "local"
+    },
+    "local_749ea072cc2a36333a32b0a5a5325b5604f5a829": {
+      "demo_path": "demos/extracted/pain-vs-lynn-vision-m2-nuke.dem",
+      "processed_at": "2026-06-30T09:54:15.435711+00:00",
+      "round_count": 16,
+      "sample_count": 1674,
+      "source": "local"
+    },
+    "local_74e05a72012268518f879eb2d38d573cc3c156e2": {
+      "demo_path": "demos/extracted/b8-vs-pain-m1-dust2.dem",
+      "processed_at": "2026-06-30T12:59:33.734559+00:00",
+      "round_count": 36,
+      "sample_count": 2671,
+      "source": "local"
+    },
+    "local_75cec60eab126595c8f8b4171c81ef2931e3fd39": {
+      "demo_path": "demos/extracted/chinggis-warriors-vs-fluxo-m3-nuke.dem",
+      "processed_at": "2026-06-30T08:52:12.217398+00:00",
+      "round_count": 14,
+      "sample_count": 1506,
+      "source": "local"
+    },
+    "local_76bea67e02a9d10a8b5e38407fb644326eeb4aac": {
+      "demo_path": "demos/extracted/gamerlegion-vs-red-canids-train.dem",
+      "processed_at": "2026-06-30T13:34:44.552359+00:00",
+      "round_count": 20,
+      "sample_count": 1507,
+      "source": "local"
+    },
+    "local_7803d6da82af75b7f789029c28c3c483ea3601c4": {
+      "demo_path": "demos/extracted/imperial-vs-legacy-m3-mirage.dem",
+      "processed_at": "2026-06-30T09:25:10.679989+00:00",
+      "round_count": 16,
+      "sample_count": 1714,
+      "source": "local"
+    },
+    "local_7849c3df1bb2df714f09a1726d224a334a121135": {
+      "demo_path": "demos/extracted/legacy-vs-mouz-m1-ancient.dem",
+      "processed_at": "2026-06-30T09:28:16.264133+00:00",
+      "round_count": 16,
+      "sample_count": 1693,
+      "source": "local"
+    },
+    "local_786848e13e398944694c6637591a2e0109c61d1f": {
+      "demo_path": "demos/extracted/betboom-vs-wildcard-m1-nuke.dem",
+      "processed_at": "2026-06-30T08:52:43.460406+00:00",
+      "round_count": 35,
+      "sample_count": 3619,
+      "source": "local"
+    },
+    "local_78c36826ab79da362d0a9a98339929f3482f1aab": {
+      "demo_path": "demos/extracted/faze-vs-legacy-m2-dust2.dem",
+      "processed_at": "2026-06-30T09:05:15.958523+00:00",
+      "round_count": 23,
+      "sample_count": 2356,
+      "source": "local"
+    },
+    "local_790f39ad3cc1c5143305dd9af4182bc042101157": {
+      "demo_path": "demos/extracted/mouz-vs-vitality-m3-train.dem",
+      "processed_at": "2026-06-30T09:41:24.278879+00:00",
+      "round_count": 18,
+      "sample_count": 2097,
+      "source": "local"
+    },
+    "local_7a4e1ffd71aceb6a07ededa57be99d212d3bd07b": {
+      "demo_path": "demos/extracted/faze-vs-lynn-vision-nuke-p1.dem",
+      "processed_at": "2026-06-30T13:01:57.838134+00:00",
+      "round_count": 6,
+      "sample_count": 404,
+      "source": "local"
+    },
+    "local_7b283ba73cc7bd319e12b0594d1bbacec67cec9a": {
+      "demo_path": "demos/extracted/heroic-vs-chinggis-warriors-anubis.dem",
+      "processed_at": "2026-06-30T09:22:00.620237+00:00",
+      "round_count": 19,
+      "sample_count": 2208,
+      "source": "local"
+    },
+    "local_7c0edeae02b54c4dc6e45cbd763d3ca1d444d9bf": {
+      "demo_path": "demos/extracted/flyquest-vs-astralis-m1-mirage.dem",
+      "processed_at": "2026-06-30T13:14:04.884000+00:00",
+      "round_count": 19,
+      "sample_count": 1341,
+      "source": "local"
+    },
+    "local_7c4aae50bdd51a30c5abab247be6348cbb73068b": {
+      "demo_path": "demos/extracted/fluxo-vs-ninjas-in-pyjamas-m1-nuke.dem",
+      "processed_at": "2026-06-30T13:11:58.108125+00:00",
+      "round_count": 19,
+      "sample_count": 1165,
+      "source": "local"
+    },
+    "local_7ce81a6b9720cd42b164e1212b38c39101ca186b": {
+      "demo_path": "demos/extracted/faze-vs-heroic-dust2.dem",
+      "processed_at": "2026-06-30T09:03:48.193671+00:00",
+      "round_count": 15,
+      "sample_count": 1654,
+      "source": "local"
+    },
+    "local_7e49a2c3f5b8880ff2d7cc561d25d1bb5aa06361": {
+      "demo_path": "demos/extracted/furia-vs-g2-m1-inferno.dem",
+      "processed_at": "2026-06-30T13:20:30.320763+00:00",
+      "round_count": 20,
+      "sample_count": 1604,
+      "source": "local"
+    },
+    "local_7e62b427c5b9710207ac292ab6062aa364a7356a": {
+      "demo_path": "demos/extracted/the-mongolz-vs-g2-m2-dust2.dem",
+      "processed_at": "2026-06-30T10:10:01.300292+00:00",
+      "round_count": 52,
+      "sample_count": 6077,
+      "source": "local"
+    },
+    "local_812a53eb06126184b4c32cc33291412d13c5fbfe": {
+      "demo_path": "demos/extracted/liquid-vs-heroic-m1-nuke.dem",
+      "processed_at": "2026-06-30T13:45:32.477783+00:00",
+      "round_count": 18,
+      "sample_count": 1208,
+      "source": "local"
+    },
+    "local_825ba9d17c45374096c00a5e232c4d52f4f03a06": {
+      "demo_path": "demos/extracted/complexity-vs-tyloo-m2-inferno.dem",
+      "processed_at": "2026-06-30T09:00:06.704427+00:00",
+      "round_count": 23,
+      "sample_count": 2885,
+      "source": "local"
+    },
+    "local_82dfdb86bb1e2632fddc1fae154d05b6911bd170": {
+      "demo_path": "demos/extracted/virtus-pro-vs-vitality-m1-train.dem",
+      "processed_at": "2026-06-30T10:13:34.793276+00:00",
+      "round_count": 18,
+      "sample_count": 2020,
+      "source": "local"
+    },
+    "local_835cd92d023837fca41e7fec0cbfaacf3b927506": {
+      "demo_path": "demos/extracted/mouz-vs-faze-ancient.dem",
+      "processed_at": "2026-06-30T09:37:24.408239+00:00",
+      "round_count": 22,
+      "sample_count": 2558,
+      "source": "local"
+    },
+    "local_83e847e76a19d4de38bc2a8099415e6039670c6e": {
+      "demo_path": "demos/extracted/b8-vs-legacy-m1-dust2.dem",
+      "processed_at": "2026-06-30T12:55:10.961175+00:00",
+      "round_count": 29,
+      "sample_count": 2170,
+      "source": "local"
+    },
+    "local_84197b42989b0a3558482b5d6632ed427711dbc4": {
+      "demo_path": "demos/extracted/3dmax-vs-pain-m1-inferno.dem",
+      "processed_at": "2026-06-30T08:32:42.427190+00:00",
+      "round_count": 21,
+      "sample_count": 2820,
+      "source": "local"
+    },
+    "local_8462b763f14270526e191465e22fbe2a164adaaa": {
+      "demo_path": "demos/extracted/furia-vs-natus-vincere-m3-train.dem",
+      "processed_at": "2026-06-30T13:23:04.598350+00:00",
+      "round_count": 16,
+      "sample_count": 1001,
+      "source": "local"
+    },
+    "local_846f691800ca6663ed38c3d852b9c366b88fdd91": {
+      "demo_path": "demos/extracted/wildcard-vs-passion-ua-m2-mirage.dem",
+      "processed_at": "2026-06-30T10:20:12.607848+00:00",
+      "round_count": 18,
+      "sample_count": 1668,
+      "source": "local"
+    },
+    "local_884aaa9e5783f1e8e919907706771238102ad1e5": {
+      "demo_path": "demos/extracted/aurora-vs-g2-inferno.dem",
+      "processed_at": "2026-06-30T08:35:22.107430+00:00",
+      "round_count": 16,
+      "sample_count": 2041,
+      "source": "local"
+    },
+    "local_88c0a96b4c32ec9473e5640c5c4eeb5d0878dcc5": {
+      "demo_path": "demos/extracted/fluxo-vs-faze-m1-inferno.dem",
+      "processed_at": "2026-06-30T13:12:05.471780+00:00",
+      "round_count": 20,
+      "sample_count": 1578,
+      "source": "local"
+    },
+    "local_896a2b64464c72028a413d50b2d96bf521e41622": {
+      "demo_path": "demos/extracted/nrg-vs-lynn-vision-m2-inferno.dem",
+      "processed_at": "2026-06-30T09:50:19.404855+00:00",
+      "round_count": 20,
+      "sample_count": 2261,
+      "source": "local"
+    },
+    "local_8d11163ea16e28845f83d641b6e9101566e2c4ec": {
+      "demo_path": "demos/extracted/natus-vincere-vs-g2-m1-mirage.dem",
+      "processed_at": "2026-06-30T09:42:20.071274+00:00",
+      "round_count": 22,
+      "sample_count": 2636,
+      "source": "local"
+    },
+    "local_8d31a3c504b4ac4b33533776b3e162c13b9868c6": {
+      "demo_path": "demos/extracted/nemiga-vs-heroic-m1-mirage.dem",
+      "processed_at": "2026-06-30T09:47:21.352294+00:00",
+      "round_count": 23,
+      "sample_count": 2929,
+      "source": "local"
+    },
+    "local_8fe272b85123bfe7d7bd51e1929ff12ee72dcbd1": {
+      "demo_path": "demos/extracted/m80-vs-astralis-ancient.dem",
+      "processed_at": "2026-06-30T13:51:00.744857+00:00",
+      "round_count": 25,
+      "sample_count": 1735,
+      "source": "local"
+    },
+    "local_9044a7e87d0aeb518b6487f0d7f59f6f25075f4a": {
+      "demo_path": "demos/extracted/og-vs-nrg-m1-mirage.dem",
+      "processed_at": "2026-06-30T09:52:42.385713+00:00",
+      "round_count": 19,
+      "sample_count": 1973,
+      "source": "local"
+    },
+    "local_90c94ab76f583f69ccc5b28e31e45f65429f12f1": {
+      "demo_path": "demos/extracted/the-mongolz-vs-lynn-vision-nuke.dem",
+      "processed_at": "2026-06-30T10:05:58.847419+00:00",
+      "round_count": 19,
+      "sample_count": 2014,
+      "source": "local"
+    },
+    "local_90d43679bcd83796662a44f1fa0c4754960a1508": {
+      "demo_path": "demos/extracted/m80-vs-og-ancient.dem",
+      "processed_at": "2026-06-30T09:33:24.064909+00:00",
+      "round_count": 28,
+      "sample_count": 3186,
+      "source": "local"
+    },
+    "local_91114fe0f909a8cfaba476ac1cc1c0c99ad4205e": {
+      "demo_path": "demos/extracted/b8-vs-wildcard-m2-dust2.dem",
+      "processed_at": "2026-06-30T08:45:08.020504+00:00",
+      "round_count": 18,
+      "sample_count": 1801,
+      "source": "local"
+    },
+    "local_9167e7160ad6bc83cc51a608745647c76a51f3bd": {
+      "demo_path": "demos/extracted/aurora-vs-mouz-m3-mirage.dem",
+      "processed_at": "2026-06-30T08:36:50.885080+00:00",
+      "round_count": 18,
+      "sample_count": 1906,
+      "source": "local"
+    },
+    "local_91c6d75059924434343c8e35589d249399677906": {
+      "demo_path": "demos/extracted/tyloo-vs-heroic-m3-train.dem",
+      "processed_at": "2026-06-30T10:08:39.456095+00:00",
+      "round_count": 22,
+      "sample_count": 2441,
+      "source": "local"
+    },
+    "local_934238f3a80f4a9155658f03630528a2d3cc6b17": {
+      "demo_path": "demos/extracted/m80-vs-nrg-m2-mirage-p2.dem",
+      "processed_at": "2026-06-30T12:22:32.638795+00:00",
+      "round_count": 14,
+      "sample_count": 1571,
+      "source": "local"
+    },
+    "local_9524e8408b8421a2fc015733712cbf48e2a2578b": {
+      "demo_path": "demos/extracted/m80-vs-tyloo-train.dem",
+      "processed_at": "2026-06-30T13:56:22.565370+00:00",
+      "round_count": 24,
+      "sample_count": 1409,
+      "source": "local"
+    },
+    "local_956cb60bb1f6b79459d3b42d5bd789a3c9a904f9": {
+      "demo_path": "demos/extracted/tyloo-vs-heroic-m1-ancient.dem",
+      "processed_at": "2026-06-30T10:07:37.106207+00:00",
+      "round_count": 28,
+      "sample_count": 3132,
+      "source": "local"
+    },
+    "local_958b5b3073fd4411f3b18b910ed8983f08bbcb42": {
+      "demo_path": "demos/extracted/vitality-vs-the-mongolz-m1-mirage.dem",
+      "processed_at": "2026-06-30T10:17:13.104112+00:00",
+      "round_count": 17,
+      "sample_count": 1994,
+      "source": "local"
+    },
+    "local_95c81efac78da3eae6ab932c654707510af3a5d7": {
+      "demo_path": "demos/extracted/legacy-vs-flyquest-train.dem",
+      "processed_at": "2026-06-30T13:41:50.647512+00:00",
+      "round_count": 24,
+      "sample_count": 1405,
+      "source": "local"
+    },
+    "local_96702ef7fa05fc6a53567eb94e9864d43d22ecc8": {
+      "demo_path": "demos/extracted/furia-vs-natus-vincere-m1-mirage.dem",
+      "processed_at": "2026-06-30T13:22:16.045626+00:00",
+      "round_count": 19,
+      "sample_count": 1277,
+      "source": "local"
+    },
+    "local_971d1d4671b08493225be454ded2856d60dbe057": {
+      "demo_path": "demos/extracted/vitality-vs-gamerlegion-mirage.dem",
+      "processed_at": "2026-06-30T10:15:03.455763+00:00",
+      "round_count": 19,
+      "sample_count": 1859,
+      "source": "local"
+    },
+    "local_98cc9d17e21cda2c8db3f93ed72d0c4c955d1cec": {
+      "demo_path": "demos/extracted/pain-vs-the-mongolz-m2-anubis.dem",
+      "processed_at": "2026-06-30T09:57:01.038182+00:00",
+      "round_count": 17,
+      "sample_count": 2105,
+      "source": "local"
+    },
+    "local_9974cc0f93e0946a660a7d375480a03f6a837a68": {
+      "demo_path": "demos/extracted/b8-vs-natus-vincere-m1-ancient.dem",
+      "processed_at": "2026-06-30T12:54:42.087846+00:00",
+      "round_count": 20,
+      "sample_count": 1187,
+      "source": "local"
+    },
+    "local_9a9384e9a52a4a645564aa2691cc6abaa1a8b41d": {
+      "demo_path": "demos/extracted/b8-vs-m80-mirage.dem",
+      "processed_at": "2026-06-30T12:54:54.326410+00:00",
+      "round_count": 27,
+      "sample_count": 1471,
+      "source": "local"
+    },
+    "local_9b8309563d54a4893323b048a456207e6f39dcba": {
+      "demo_path": "demos/extracted/fnatic-vs-fluxo-train.dem",
+      "processed_at": "2026-06-30T13:16:11.617771+00:00",
+      "round_count": 22,
+      "sample_count": 1487,
+      "source": "local"
+    },
+    "local_9ca4de7d7ee24824044b6434cc8295094125933d": {
+      "demo_path": "demos/extracted/3dmax-vs-fnatic-inferno.dem",
+      "processed_at": "2026-06-30T12:47:06.232029+00:00",
+      "round_count": 21,
+      "sample_count": 1912,
+      "source": "local"
+    },
+    "local_9cb02c32d2d64a90f3486b9a5a923502f59eaa37": {
+      "demo_path": "demos/extracted/imperial-vs-the-huns-m2-mirage.dem",
+      "processed_at": "2026-06-30T13:41:37.949159+00:00",
+      "round_count": 29,
+      "sample_count": 1941,
+      "source": "local"
+    },
+    "local_9d08d62fedb296e1e55b023fb2a16159a2b0c8de": {
+      "demo_path": "demos/extracted/aurora-vs-faze-dust2.dem",
+      "processed_at": "2026-06-30T12:52:14.145292+00:00",
+      "round_count": 24,
+      "sample_count": 1902,
+      "source": "local"
+    },
+    "local_9d0fe9a997b753c8c1b260c748b5bd0c73cff2f4": {
+      "demo_path": "demos/extracted/virtus-pro-vs-og-inferno.dem",
+      "processed_at": "2026-06-30T10:11:48.960062+00:00",
+      "round_count": 14,
+      "sample_count": 1873,
+      "source": "local"
+    },
+    "local_9d5e5ab8ee0382e53462dc9089f86304f2f66a03": {
+      "demo_path": "demos/extracted/virtus-pro-vs-b8-inferno.dem",
+      "processed_at": "2026-06-30T10:10:29.750629+00:00",
+      "round_count": 15,
+      "sample_count": 1846,
+      "source": "local"
+    },
+    "local_9e99d15d294a66b62f5a0e3cfdc26f0a910cad6e": {
+      "demo_path": "demos/extracted/faze-vs-ninjas-in-pyjamas-m2-nuke.dem",
+      "processed_at": "2026-06-30T13:08:54.121638+00:00",
+      "round_count": 31,
+      "sample_count": 2177,
+      "source": "local"
+    },
+    "local_9f0121715453363b75868c20a995c7cc1e582e28": {
+      "demo_path": "demos/extracted/gamerlegion-vs-betboom-m1-nuke.dem",
+      "processed_at": "2026-06-30T13:27:37.145497+00:00",
+      "round_count": 15,
+      "sample_count": 1135,
+      "source": "local"
+    },
+    "local_a04117b76b6900ec6068833b4761256193308ac4": {
+      "demo_path": "demos/extracted/aurora-vs-faze-anubis.dem",
+      "processed_at": "2026-06-30T08:34:20.993166+00:00",
+      "round_count": 17,
+      "sample_count": 2364,
+      "source": "local"
+    },
+    "local_a2daa04a52f7e9702dc169209103caa7bf5cd431": {
+      "demo_path": "demos/extracted/faze-vs-mibr-m2-ancient.dem",
+      "processed_at": "2026-06-30T09:09:00.401083+00:00",
+      "round_count": 27,
+      "sample_count": 3028,
+      "source": "local"
+    },
+    "local_a4717d930f0f7c9de529ecad9d2544dc889e45f7": {
+      "demo_path": "demos/extracted/liquid-vs-astralis-m2-mirage.dem",
+      "processed_at": "2026-06-30T13:43:32.190085+00:00",
+      "round_count": 23,
+      "sample_count": 1376,
+      "source": "local"
+    },
+    "local_a526b9e8b5bc84cbbffd667840b3c6ddb0e39529": {
+      "demo_path": "demos/extracted/b8-vs-legacy-m2-mirage.dem",
+      "processed_at": "2026-06-30T12:53:22.530438+00:00",
+      "round_count": 19,
+      "sample_count": 971,
+      "source": "local"
+    },
+    "local_a7e27629bd544ba70660cc06e8bbba4d3961d277": {
+      "demo_path": "demos/extracted/mibr-vs-thunder-downunder-inferno.dem",
+      "processed_at": "2026-06-30T13:59:42.711821+00:00",
+      "round_count": 19,
+      "sample_count": 1440,
+      "source": "local"
+    },
+    "local_a8cb29ce0d0f7ba45a709392c53c53f0847e9d22": {
+      "demo_path": "demos/extracted/g2-vs-falcons-m1-ancient.dem",
+      "processed_at": "2026-06-30T13:24:50.141810+00:00",
+      "round_count": 24,
+      "sample_count": 1538,
+      "source": "local"
+    },
+    "local_a92ab0780049b56ccbec8ec869668fd794e1cc0d": {
+      "demo_path": "demos/extracted/betboom-vs-wildcard-m2-anubis.dem",
+      "processed_at": "2026-06-30T08:52:05.122412+00:00",
+      "round_count": 29,
+      "sample_count": 3232,
+      "source": "local"
+    },
+    "local_a953fd8f14a0c71741028747bcd24c5f14350df7": {
+      "demo_path": "demos/extracted/wildcard-vs-passion-ua-m1-inferno.dem",
+      "processed_at": "2026-06-30T10:20:10.056423+00:00",
+      "round_count": 18,
+      "sample_count": 1917,
+      "source": "local"
+    },
+    "local_a9ac332e7406dae0f93f55de584c6d7a353a8c84": {
+      "demo_path": "demos/extracted/m80-vs-b8-m2-inferno.dem",
+      "processed_at": "2026-06-30T13:54:02.652094+00:00",
+      "round_count": 42,
+      "sample_count": 3282,
+      "source": "local"
+    },
+    "local_aae5d86a516835add6d40a6cd15dddab1320786d": {
+      "demo_path": "demos/extracted/pain-vs-virtus-pro-m1-dust2.dem",
+      "processed_at": "2026-06-30T09:57:50.974334+00:00",
+      "round_count": 22,
+      "sample_count": 2904,
+      "source": "local"
+    },
+    "local_ab0f31f7b55f21b4805f4ea9ac22bdf4032792eb": {
+      "demo_path": "demos/extracted/g2-vs-the-mongolz-m2-dust2.dem",
+      "processed_at": "2026-06-30T13:26:45.986385+00:00",
+      "round_count": 20,
+      "sample_count": 1482,
+      "source": "local"
+    },
+    "local_ac3a4fa6aeb0926d4c62bc10544356f94cfcee9b": {
+      "demo_path": "demos/extracted/mouz-vs-falcons-m3-nuke.dem",
+      "processed_at": "2026-06-30T14:02:34.204072+00:00",
+      "round_count": 24,
+      "sample_count": 1638,
+      "source": "local"
+    },
+    "local_aca99233eeaf61c4688b0d52b7f1224123af59b0": {
+      "demo_path": "demos/extracted/flyquest-vs-astralis-m2-overpass.dem",
+      "processed_at": "2026-06-30T13:14:58.904542+00:00",
+      "round_count": 24,
+      "sample_count": 1609,
+      "source": "local"
+    },
+    "local_acec009d1eedcf446a213079582fd3f3fdf8fac3": {
+      "demo_path": "demos/extracted/tyloo-vs-nrg-anubis.dem",
+      "processed_at": "2026-06-30T10:09:58.662835+00:00",
+      "round_count": 17,
+      "sample_count": 1881,
+      "source": "local"
+    },
+    "local_ad1c235c48dfe6b1a1b259c2bb91c2b39793034d": {
+      "demo_path": "demos/extracted/pain-vs-lynn-vision-m1-dust2.dem",
+      "processed_at": "2026-06-30T09:54:44.853613+00:00",
+      "round_count": 20,
+      "sample_count": 2598,
+      "source": "local"
+    },
+    "local_aef35088aaf978753ae00b10d98b1b3d1c3b0ccb": {
+      "demo_path": "demos/extracted/wildcard-vs-legacy-m1-inferno.dem",
+      "processed_at": "2026-06-30T10:19:37.005741+00:00",
+      "round_count": 22,
+      "sample_count": 2666,
+      "source": "local"
+    },
+    "local_af2937639b3323eebc5fd8eb16ffc4176ea94d02": {
+      "demo_path": "demos/extracted/betboom-vs-legacy-anubis.dem",
+      "processed_at": "2026-06-30T08:47:59.082203+00:00",
+      "round_count": 15,
+      "sample_count": 2099,
+      "source": "local"
+    },
+    "local_af4670206ce639d0d5e1556c9bf46ac25215b5ff": {
+      "demo_path": "demos/extracted/flyquest-vs-tyloo-m3-anubis.dem",
+      "processed_at": "2026-06-30T09:13:48.494461+00:00",
+      "round_count": 15,
+      "sample_count": 1647,
+      "source": "local"
+    },
+    "local_af4a261dbce125d1360c96c7288a03f4d7da75d5": {
+      "demo_path": "demos/extracted/big-vs-liquid-nuke.dem",
+      "processed_at": "2026-06-30T13:03:54.156492+00:00",
+      "round_count": 23,
+      "sample_count": 1553,
+      "source": "local"
+    },
+    "local_afbdbe092e61e5d40d32061427d03639d8e57c84": {
+      "demo_path": "demos/extracted/gamerlegion-vs-rare-atom-m1-inferno.dem",
+      "processed_at": "2026-06-30T13:34:29.663682+00:00",
+      "round_count": 24,
+      "sample_count": 1927,
+      "source": "local"
+    },
+    "local_b25c5fe1a72c6959938b6eba41803b4af0c83f07": {
+      "demo_path": "demos/extracted/fnatic-vs-red-canids-ancient.dem",
+      "processed_at": "2026-06-30T13:20:53.062631+00:00",
+      "round_count": 30,
+      "sample_count": 2330,
+      "source": "local"
+    },
+    "local_b36672e1cd5195297b68587d8c7666a8877b1c40": {
+      "demo_path": "demos/extracted/mouz-vs-b8-overpass.dem",
+      "processed_at": "2026-06-30T13:59:52.156578+00:00",
+      "round_count": 20,
+      "sample_count": 1383,
+      "source": "local"
+    },
+    "local_b651f0d95c5e89d57442c5573fbd25d9e4751d69": {
+      "demo_path": "demos/extracted/g2-vs-falcons-m3-dust2.dem",
+      "processed_at": "2026-06-30T13:25:37.604725+00:00",
+      "round_count": 24,
+      "sample_count": 1610,
+      "source": "local"
+    },
+    "local_b76c73aa2dca009aa85a307481d406e8718b94f5": {
+      "demo_path": "demos/extracted/flyquest-vs-nemiga-m1-ancient.dem",
+      "processed_at": "2026-06-30T09:12:54.295280+00:00",
+      "round_count": 21,
+      "sample_count": 2714,
+      "source": "local"
+    },
+    "local_b79ef75c23b9e1aa762db18897e19134e9ccf963": {
+      "demo_path": "demos/extracted/virtus-pro-vs-pain-m1-mirage.dem",
+      "processed_at": "2026-06-30T10:12:43.917719+00:00",
+      "round_count": 20,
+      "sample_count": 2747,
+      "source": "local"
+    },
+    "local_b9dbf7fb2f32fcc07efefe8a17997eb53a119c4b": {
+      "demo_path": "demos/extracted/mouz-vs-falcons-m1-mirage.dem",
+      "processed_at": "2026-06-30T14:02:08.310999+00:00",
+      "round_count": 25,
+      "sample_count": 1744,
+      "source": "local"
+    },
+    "local_baf1e1cfc408cbf48c7184adc4e7db8a1dc9baba": {
+      "demo_path": "demos/extracted/vitality-vs-the-mongolz-m3-inferno.dem",
+      "processed_at": "2026-06-30T10:18:51.707746+00:00",
+      "round_count": 18,
+      "sample_count": 2249,
+      "source": "local"
+    },
+    "local_bb75db69a02c2b77744c707790af20bf3dd4eee7": {
+      "demo_path": "demos/extracted/vitality-vs-nemiga-dust2.dem",
+      "processed_at": "2026-06-30T10:17:03.916921+00:00",
+      "round_count": 18,
+      "sample_count": 2035,
+      "source": "local"
+    },
+    "local_bb80638dc68a570ab3d80d3363bc7130367edc75": {
+      "demo_path": "demos/extracted/mouz-vs-liquid-m3-mirage.dem",
+      "processed_at": "2026-06-30T09:43:43.178071+00:00",
+      "round_count": 40,
+      "sample_count": 4698,
+      "source": "local"
+    },
+    "local_bc2b415a60015f19b6ff165e33672a944c30601a": {
+      "demo_path": "demos/extracted/3dmax-vs-vitality-nuke.dem",
+      "processed_at": "2026-06-30T12:46:32.211012+00:00",
+      "round_count": 20,
+      "sample_count": 1199,
+      "source": "local"
+    },
+    "local_bd8e9547584c1df00d040c579a5ed3a477f43f15": {
+      "demo_path": "demos/extracted/mouz-vs-faze-m1-nuke.dem",
+      "processed_at": "2026-06-30T14:03:45.806704+00:00",
+      "round_count": 26,
+      "sample_count": 1838,
+      "source": "local"
+    },
+    "local_bf1320f4770565808a8d716c66c4be8721f03c92": {
+      "demo_path": "demos/extracted/gamerlegion-vs-rare-atom-m2-overpass.dem",
+      "processed_at": "2026-06-30T13:32:56.548143+00:00",
+      "round_count": 19,
+      "sample_count": 1309,
+      "source": "local"
+    },
+    "local_c024d39ff8839df47bbca284688c219cfe2aef0c": {
+      "demo_path": "demos/extracted/b8-vs-falcons-ancient.dem",
+      "processed_at": "2026-06-30T12:52:58.101102+00:00",
+      "round_count": 24,
+      "sample_count": 1515,
+      "source": "local"
+    },
+    "local_c088716648fb85924d97453674ca2cd280ea2efd": {
+      "demo_path": "demos/extracted/aurora-vs-furia-dust2.dem",
+      "processed_at": "2026-06-30T08:34:29.217763+00:00",
+      "round_count": 19,
+      "sample_count": 2434,
+      "source": "local"
+    },
+    "local_c16ba5a4b4dc4e0e44eb40a760fa10b6d907bea1": {
+      "demo_path": "demos/extracted/furia-vs-virtus-pro-m2-train.dem",
+      "processed_at": "2026-06-30T09:19:47.265950+00:00",
+      "round_count": 17,
+      "sample_count": 1987,
+      "source": "local"
+    },
+    "local_c24285e56f4e87d7bce670830200051e8f878da5": {
+      "demo_path": "demos/extracted/vitality-vs-mibr-m2-anubis.dem",
+      "processed_at": "2026-06-30T10:16:47.135263+00:00",
+      "round_count": 17,
+      "sample_count": 2000,
+      "source": "local"
+    },
+    "local_c3391f8ab7290e313387002051ae06e1023a4480": {
+      "demo_path": "demos/extracted/furia-vs-virtus-pro-m1-mirage.dem",
+      "processed_at": "2026-06-30T09:19:23.675533+00:00",
+      "round_count": 16,
+      "sample_count": 1860,
+      "source": "local"
+    },
+    "local_c735dfcd8065986a563ea53bbf146202fa814b56": {
+      "demo_path": "demos/extracted/faze-vs-passion-ua-m1-overpass.dem",
+      "processed_at": "2026-06-30T13:10:12.086799+00:00",
+      "round_count": 25,
+      "sample_count": 1903,
+      "source": "local"
+    },
+    "local_c83025095cbd335acebc3e6dbe864cfff279a61f": {
+      "demo_path": "demos/extracted/falcons-vs-lynn-vision-nuke.dem",
+      "processed_at": "2026-06-30T08:59:51.738033+00:00",
+      "round_count": 22,
+      "sample_count": 2411,
+      "source": "local"
+    },
+    "local_c834f365f8f3a5b2f4fe0c6a1b9cd516c792db1e": {
+      "demo_path": "demos/extracted/furia-vs-pain-m1-nuke.dem",
+      "processed_at": "2026-06-30T09:17:44.060004+00:00",
+      "round_count": 18,
+      "sample_count": 2266,
+      "source": "local"
+    },
+    "local_c8bdfd210dfd10e5da9ee78d20e1e9a5a33710fa": {
+      "demo_path": "demos/extracted/liquid-vs-mibr-mirage.dem",
+      "processed_at": "2026-06-30T13:46:34.766954+00:00",
+      "round_count": 23,
+      "sample_count": 1484,
+      "source": "local"
+    },
+    "local_ca157e243dcac56dd38bfb4ccdb86262b3ff6f5b": {
+      "demo_path": "demos/extracted/tyloo-vs-heroic-m2-mirage.dem",
+      "processed_at": "2026-06-30T10:07:35.389334+00:00",
+      "round_count": 22,
+      "sample_count": 2465,
+      "source": "local"
+    },
+    "local_ca7924ae7a3ce4e8429fe074b441ba206c802a65": {
+      "demo_path": "demos/extracted/legacy-vs-faze-anubis.dem",
+      "processed_at": "2026-06-30T09:27:36.607376+00:00",
+      "round_count": 20,
+      "sample_count": 2633,
+      "source": "local"
+    },
+    "local_caa8b8b78b963baab8356d7c241be4200168a7e3": {
+      "demo_path": "demos/extracted/heroic-vs-lynn-vision-dust2.dem",
+      "processed_at": "2026-06-30T13:35:27.263382+00:00",
+      "round_count": 24,
+      "sample_count": 1859,
+      "source": "local"
+    },
+    "local_cab829e387c9438f5e6609ed625ecee272aa730e": {
+      "demo_path": "demos/extracted/aurora-vs-mouz-m2-inferno.dem",
+      "processed_at": "2026-06-30T08:36:56.010869+00:00",
+      "round_count": 23,
+      "sample_count": 3151,
+      "source": "local"
+    },
+    "local_cb31be3a804a27d7a75ba612418e65d2caa208f0": {
+      "demo_path": "demos/extracted/spirit-vs-natus-vincere-m2-train.dem",
+      "processed_at": "2026-06-30T10:01:45.107451+00:00",
+      "round_count": 15,
+      "sample_count": 1719,
+      "source": "local"
+    },
+    "local_cba16347b62cb5527b91f286618e578174f2da31": {
+      "demo_path": "demos/extracted/heroic-vs-flyquest-m1-ancient.dem",
+      "processed_at": "2026-06-30T09:21:58.959316+00:00",
+      "round_count": 19,
+      "sample_count": 1835,
+      "source": "local"
+    },
+    "local_cbcdee2a31a0acece3d7985eec9746396c8a223c": {
+      "demo_path": "demos/extracted/b8-vs-pain-m2-ancient.dem",
+      "processed_at": "2026-06-30T12:58:19.879827+00:00",
+      "round_count": 29,
+      "sample_count": 1898,
+      "source": "local"
+    },
+    "local_cce3d9b94a537ee8c1c051433a69afe68f9c0cdf": {
+      "demo_path": "demos/extracted/complexity-vs-og-ancient.dem",
+      "processed_at": "2026-06-30T08:57:07.129225+00:00",
+      "round_count": 15,
+      "sample_count": 1358,
+      "source": "local"
+    },
+    "local_ccfac0b7d41d46d3ec274b1d8024ac4564f93e01": {
+      "demo_path": "demos/extracted/mibr-vs-liquid-m1-inferno.dem",
+      "processed_at": "2026-06-30T13:57:21.082955+00:00",
+      "round_count": 19,
+      "sample_count": 1483,
+      "source": "local"
+    },
+    "local_ce9e9b300d8ec6d72c0a7c47233df5336747de44": {
+      "demo_path": "demos/extracted/spirit-vs-lynn-vision-dust2.dem",
+      "processed_at": "2026-06-30T09:58:18.493386+00:00",
+      "round_count": 19,
+      "sample_count": 2272,
+      "source": "local"
+    },
+    "local_ced3e850715e7dd66f04ba5a70db262ab0ac1a0f": {
+      "demo_path": "demos/extracted/g2-vs-pain-dust2.dem",
+      "processed_at": "2026-06-30T09:21:50.762819+00:00",
+      "round_count": 19,
+      "sample_count": 2372,
+      "source": "local"
+    },
+    "local_cefb693baf6d9fb817bc5a7a02e6987a6318a8dd": {
+      "demo_path": "demos/extracted/imperial-vs-rare-atom-dust2.dem",
+      "processed_at": "2026-06-30T13:39:55.281811+00:00",
+      "round_count": 27,
+      "sample_count": 1692,
+      "source": "local"
+    },
+    "local_cf47b9a4cce5828b2557b80ec7bf9f32932acd5b": {
+      "demo_path": "demos/extracted/falcons-vs-mibr-m3-inferno.dem",
+      "processed_at": "2026-06-30T09:06:27.014686+00:00",
+      "round_count": 41,
+      "sample_count": 5212,
+      "source": "local"
+    },
+    "local_cf5ebca35df4934da74472490ebd7ea9a8ac46bd": {
+      "demo_path": "demos/extracted/g2-vs-the-mongolz-m1-ancient.dem",
+      "processed_at": "2026-06-30T13:26:12.914535+00:00",
+      "round_count": 18,
+      "sample_count": 1154,
+      "source": "local"
+    },
+    "local_d1741ecebc85a7cd194bf2d7901b354f9c7a030c": {
+      "demo_path": "demos/extracted/mibr-vs-betboom-m2-anubis.dem",
+      "processed_at": "2026-06-30T09:35:36.939591+00:00",
+      "round_count": 23,
+      "sample_count": 2848,
+      "source": "local"
+    },
+    "local_d2d75e47db53c211d4b2f0d9629db77fc6c324bf": {
+      "demo_path": "demos/extracted/faze-vs-tyloo-anubis.dem",
+      "processed_at": "2026-06-30T09:09:18.553097+00:00",
+      "round_count": 17,
+      "sample_count": 1893,
+      "source": "local"
+    },
+    "local_d3080fffbcc452035020aa698231d182f233eda5": {
+      "demo_path": "demos/extracted/aurora-vs-astralis-m2-train.dem",
+      "processed_at": "2026-06-30T12:49:03.562891+00:00",
+      "round_count": 22,
+      "sample_count": 1492,
+      "source": "local"
+    },
+    "local_d310a9f3a9474d57e46f3c24c38f19208fe2a0fa": {
+      "demo_path": "demos/extracted/chinggis-warriors-vs-lynn-vision-m2-nuke.dem",
+      "processed_at": "2026-06-30T08:55:23.273634+00:00",
+      "round_count": 22,
+      "sample_count": 2424,
+      "source": "local"
+    },
+    "local_d318f4d4ad89f4e1933594ea3bbe83a65f0be3b4": {
+      "demo_path": "demos/extracted/legacy-vs-mouz-m3-nuke.dem",
+      "processed_at": "2026-06-30T09:29:54.067265+00:00",
+      "round_count": 22,
+      "sample_count": 2191,
+      "source": "local"
+    },
+    "local_d35cd8ca5bb109f84cb658604adacf2f7a24dc70": {
+      "demo_path": "demos/extracted/b8-vs-the-huns-ancient.dem",
+      "processed_at": "2026-06-30T12:59:47.299620+00:00",
+      "round_count": 25,
+      "sample_count": 1653,
+      "source": "local"
+    },
+    "local_d36f2c07aad01eb894df882281d5917a4215464b": {
+      "demo_path": "demos/extracted/imperial-vs-m80-m3-train.dem",
+      "processed_at": "2026-06-30T13:38:55.953250+00:00",
+      "round_count": 26,
+      "sample_count": 1743,
+      "source": "local"
+    },
+    "local_d4102c33e1332e42f40714a032fcae40b968ac89": {
+      "demo_path": "demos/extracted/furia-vs-g2-m2-overpass.dem",
+      "processed_at": "2026-06-30T13:22:33.508950+00:00",
+      "round_count": 24,
+      "sample_count": 2135,
+      "source": "local"
+    },
+    "local_d462dba09886f01b18c7aa57134aef4c99465e19": {
+      "demo_path": "demos/extracted/nemiga-vs-m80-m2-dust2.dem",
+      "processed_at": "2026-06-30T09:48:13.407824+00:00",
+      "round_count": 14,
+      "sample_count": 1564,
+      "source": "local"
+    },
+    "local_d564c7121be581cd8a022783a12a29396501b7eb": {
+      "demo_path": "demos/extracted/chinggis-warriors-vs-lynn-vision-m1-inferno.dem",
+      "processed_at": "2026-06-30T08:55:38.853713+00:00",
+      "round_count": 21,
+      "sample_count": 2790,
+      "source": "local"
+    },
+    "local_d60cd78028651a20a0e8c771b263eb556ce802eb": {
+      "demo_path": "demos/extracted/furia-vs-pain-m2-anubis.dem",
+      "processed_at": "2026-06-30T09:18:49.914400+00:00",
+      "round_count": 20,
+      "sample_count": 2345,
+      "source": "local"
+    },
+    "local_d62dbd2dcfaaa328645f051fedef09db900917e9": {
+      "demo_path": "demos/extracted/furia-vs-b8-m2-train.dem",
+      "processed_at": "2026-06-30T09:15:03.513657+00:00",
+      "round_count": 18,
+      "sample_count": 1785,
+      "source": "local"
+    },
+    "local_d6bae560850573242035e7535a09bb88f8a56da9": {
+      "demo_path": "demos/extracted/betboom-vs-gaimin-gladiators-dust2.dem",
+      "processed_at": "2026-06-30T13:01:34.968434+00:00",
+      "round_count": 17,
+      "sample_count": 1274,
+      "source": "local"
+    },
+    "local_d7f8127447c91e88e05c0d4337e4d0ec898b7d2c": {
+      "demo_path": "demos/extracted/wildcard-vs-legacy-m2-nuke.dem",
+      "processed_at": "2026-06-30T10:19:21.157194+00:00",
+      "round_count": 18,
+      "sample_count": 1778,
+      "source": "local"
+    },
+    "local_d80c72ec748fe6d201f30eaa2d3415107dda61e3": {
+      "demo_path": "demos/extracted/faze-vs-3dmax-m2-inferno.dem",
+      "processed_at": "2026-06-30T09:02:41.764024+00:00",
+      "round_count": 21,
+      "sample_count": 2549,
+      "source": "local"
+    },
+    "local_d8405e597ffb93a522def16a77c894afbdfa006a": {
+      "demo_path": "demos/extracted/liquid-vs-flyquest-m1-anubis.dem",
+      "processed_at": "2026-06-30T13:44:07.457368+00:00",
+      "round_count": 15,
+      "sample_count": 912,
+      "source": "local"
+    },
+    "local_d859d6195900451f9edc160fd1e7925574af00f7": {
+      "demo_path": "demos/extracted/furia-vs-natus-vincere-m2-inferno.dem",
+      "processed_at": "2026-06-30T13:24:43.950583+00:00",
+      "round_count": 29,
+      "sample_count": 2331,
+      "source": "local"
+    },
+    "local_d8e68767c53cc7a09d87fb1f0c44012371dcfbe3": {
+      "demo_path": "demos/extracted/mouz-vs-liquid-m2-nuke.dem",
+      "processed_at": "2026-06-30T09:37:15.339088+00:00",
+      "round_count": 16,
+      "sample_count": 1893,
+      "source": "local"
+    },
+    "local_dcb4ba2714ded3438926135f422718c8c6f4215a": {
+      "demo_path": "demos/extracted/b8-vs-og-inferno.dem",
+      "processed_at": "2026-06-30T08:47:10.341150+00:00",
+      "round_count": 23,
+      "sample_count": 2696,
+      "source": "local"
+    },
+    "local_df9fc5c02b5535e84c8c341fa84fce56fdd39a2b": {
+      "demo_path": "demos/extracted/liquid-vs-tyloo-m2-train.dem",
+      "processed_at": "2026-06-30T13:48:03.545697+00:00",
+      "round_count": 18,
+      "sample_count": 1036,
+      "source": "local"
+    },
+    "local_e0aa3014114fd643a300e53a592a27b6302d7d9e": {
+      "demo_path": "demos/extracted/fluxo-vs-ninjas-in-pyjamas-m2-train-p2.dem",
+      "processed_at": "2026-06-30T13:12:27.368552+00:00",
+      "round_count": 10,
+      "sample_count": 417,
+      "source": "local"
+    },
+    "local_e144600e79b898ca9e330a1833a494ed3b9245be": {
+      "demo_path": "demos/extracted/b8-vs-3dmax-m1-train.dem",
+      "processed_at": "2026-06-30T12:50:42.787139+00:00",
+      "round_count": 17,
+      "sample_count": 991,
+      "source": "local"
+    },
+    "local_e3217c18c90c84ca33962e127e3d98899be07052": {
+      "demo_path": "demos/extracted/m80-vs-nrg-m2-inferno.dem",
+      "processed_at": "2026-06-30T13:55:36.953250+00:00",
+      "round_count": 23,
+      "sample_count": 1489,
+      "source": "local"
+    },
+    "local_e52a9b7d015a5b3670217b49170e1e196cd1a63b": {
+      "demo_path": "demos/extracted/m80-vs-nrg-m1-ancient.dem",
+      "processed_at": "2026-06-30T13:53:40.454185+00:00",
+      "round_count": 19,
+      "sample_count": 1475,
+      "source": "local"
+    },
+    "local_e62754088e1195a19626b208ec40e5d8df847f68": {
+      "demo_path": "demos/extracted/vitality-vs-the-mongolz-m2-dust2.dem",
+      "processed_at": "2026-06-30T10:17:41.168769+00:00",
+      "round_count": 16,
+      "sample_count": 1918,
+      "source": "local"
+    },
+    "local_e787b4b42cae7c32e62f8fa23bba9aa236c13e86": {
+      "demo_path": "demos/extracted/liquid-vs-lynn-vision-dust2.dem",
+      "processed_at": "2026-06-30T09:29:58.391086+00:00",
+      "round_count": 17,
+      "sample_count": 1996,
+      "source": "local"
+    },
+    "local_e80e1e5ba61928ba062bca3df61da2dcfd6a8cdc": {
+      "demo_path": "demos/extracted/falcons-vs-b8-ancient.dem",
+      "processed_at": "2026-06-30T08:59:47.055036+00:00",
+      "round_count": 20,
+      "sample_count": 2522,
+      "source": "local"
+    },
+    "local_e8c5d142fca038a0608f837885b6271c8b3a93d8": {
+      "demo_path": "demos/extracted/chinggis-warriors-vs-legacy-nuke.dem",
+      "processed_at": "2026-06-30T08:56:04.506830+00:00",
+      "round_count": 22,
+      "sample_count": 3333,
+      "source": "local"
+    },
+    "local_e99e4eb763ad521adc253f140997be70f9da5975": {
+      "demo_path": "demos/extracted/nemiga-vs-m80-m1-ancient.dem",
+      "processed_at": "2026-06-30T09:49:21.023083+00:00",
+      "round_count": 23,
+      "sample_count": 2570,
+      "source": "local"
+    },
+    "local_e9c6b8bf7eae11e295e85280838bf10f881e47e9": {
+      "demo_path": "demos/extracted/mouz-vs-liquid-m1-dust2.dem",
+      "processed_at": "2026-06-30T09:37:32.674649+00:00",
+      "round_count": 20,
+      "sample_count": 2276,
+      "source": "local"
+    },
+    "local_ea40dd4dff3a5b7e37a4390508fe870f77938d9b": {
+      "demo_path": "demos/extracted/mouz-vs-virtuspro-mirage.dem",
+      "processed_at": "2026-06-30T09:40:42.865471+00:00",
+      "round_count": 25,
+      "sample_count": 2911,
+      "source": "local"
+    },
+    "local_ebe12f7185492ec0902af146c591172fa338f04e": {
+      "demo_path": "demos/extracted/spirit-vs-mouz-m2-dust2.dem",
+      "processed_at": "2026-06-30T10:00:21.117684+00:00",
+      "round_count": 21,
+      "sample_count": 2613,
+      "source": "local"
+    },
+    "local_ed91d01486416e212b04788ee20f6c6c8f63701d": {
+      "demo_path": "demos/extracted/gamerlegion-vs-big-m2-ancient.dem",
+      "processed_at": "2026-06-30T13:30:34.685178+00:00",
+      "round_count": 24,
+      "sample_count": 1462,
+      "source": "local"
+    },
+    "local_ef9be9e507a53f670778a3941ce6b900bd4ac102": {
+      "demo_path": "demos/extracted/flyquest-vs-tyloo-m2-mirage.dem",
+      "processed_at": "2026-06-30T09:12:29.365017+00:00",
+      "round_count": 15,
+      "sample_count": 1571,
+      "source": "local"
+    },
+    "local_eff54314d2f9d4654d054cb267767ce85e23456a": {
+      "demo_path": "demos/extracted/g2-vs-falcons-m2-inferno.dem",
+      "processed_at": "2026-06-30T13:24:59.738092+00:00",
+      "round_count": 18,
+      "sample_count": 1418,
+      "source": "local"
+    },
+    "local_f0c77afbfc6ee03817720f1e7f820579adc98285": {
+      "demo_path": "demos/extracted/b8-vs-wildcard-m1-train.dem",
+      "processed_at": "2026-06-30T08:47:22.885069+00:00",
+      "round_count": 29,
+      "sample_count": 2966,
+      "source": "local"
+    },
+    "local_f4aa8747f28525b065f26b2875424d6f1fe4bad3": {
+      "demo_path": "demos/extracted/mibr-vs-lynn-vision-m2-inferno.dem",
+      "processed_at": "2026-06-30T13:57:51.390903+00:00",
+      "round_count": 15,
+      "sample_count": 992,
+      "source": "local"
+    },
+    "local_f50ca842ed561e5b75a5b46bb807c0f2bf1c8c2e": {
+      "demo_path": "demos/extracted/natus-vincere-vs-vitality-m1-mirage.dem",
+      "processed_at": "2026-06-30T09:46:25.012583+00:00",
+      "round_count": 21,
+      "sample_count": 2562,
+      "source": "local"
+    },
+    "local_f640d4c381047f9b483100ed38aef7dcd63ea105": {
+      "demo_path": "demos/extracted/the-mongolz-vs-furia-inferno.dem",
+      "processed_at": "2026-06-30T10:04:03.170358+00:00",
+      "round_count": 25,
+      "sample_count": 2548,
+      "source": "local"
+    },
+    "local_f682225207003c3580c58de1939414c99330bd32": {
+      "demo_path": "demos/extracted/m80-vs-tyloo-train.dem",
+      "processed_at": "2026-06-30T09:32:56.322777+00:00",
+      "round_count": 21,
+      "sample_count": 2336,
+      "source": "local"
+    },
+    "local_f9f1518bf7ec9f8ba23a630252feded1f20ef7db": {
+      "demo_path": "demos/extracted/legacy-vs-lynn-vision-m1-dust2.dem",
+      "processed_at": "2026-06-30T09:26:48.187350+00:00",
+      "round_count": 14,
+      "sample_count": 1657,
+      "source": "local"
+    },
+    "local_fae498c81dacc52fab980011ca5af10a2f47c7d3": {
+      "demo_path": "demos/extracted/b8-vs-natus-vincere-m2-train.dem",
+      "processed_at": "2026-06-30T12:57:31.098802+00:00",
+      "round_count": 31,
+      "sample_count": 2004,
+      "source": "local"
+    },
+    "local_faf6fb75d20958ba69e7e21e84093b0a020bb2e6": {
+      "demo_path": "demos/extracted/astralis-vs-ninjas-in-pyjamas-nuke.dem",
+      "processed_at": "2026-06-30T12:49:04.866763+00:00",
+      "round_count": 23,
+      "sample_count": 1699,
+      "source": "local"
+    },
+    "local_fbf976e5d5c0391f2a36efb1d554d6784e07c393": {
+      "demo_path": "demos/extracted/virtus-pro-vs-legacy-ancient.dem",
+      "processed_at": "2026-06-30T10:11:47.141717+00:00",
+      "round_count": 23,
+      "sample_count": 2668,
+      "source": "local"
+    },
+    "local_fcd81a1a675f66a6ee218d37df98b638e3f779e6": {
+      "demo_path": "demos/extracted/mibr-vs-nemiga-ancient.dem",
+      "processed_at": "2026-06-30T09:37:17.401368+00:00",
+      "round_count": 27,
+      "sample_count": 2883,
+      "source": "local"
+    },
+    "local_fdd0e295a28cb57d8495db111162d18e631107b6": {
+      "demo_path": "demos/extracted/mibr-vs-imperial-nuke.dem",
+      "processed_at": "2026-06-30T13:55:42.154097+00:00",
+      "round_count": 19,
+      "sample_count": 1502,
+      "source": "local"
+    },
+    "local_ff25ab10a7adb63a2f72e158fb113fcf474e2e1c": {
+      "demo_path": "demos/extracted/legacy-vs-lynn-vision-m3-nuke.dem",
+      "processed_at": "2026-06-30T09:27:57.823026+00:00",
+      "round_count": 17,
+      "sample_count": 1667,
+      "source": "local"
+    },
+    "local_ff6f9a7f1860580d39dd84fe18c4249d6163f63e": {
+      "demo_path": "demos/extracted/vitality-vs-furia-mirage.dem",
+      "processed_at": "2026-06-30T10:15:34.804743+00:00",
+      "round_count": 28,
+      "sample_count": 3090,
+      "source": "local"
+    }
+  }
+}

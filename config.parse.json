@@ -1,0 +1,108 @@
+{
+  "input": {
+    "mode": "local",
+    "local_demo_dir": "demos/extracted",
+    "local_recursive": true,
+    "local_match_id_strategy": "header",
+    "local_delete_processed_demo": true,
+    "local_rejected_demo_dir": "demos/rejected"
+  },
+  "parsing": {
+    "sample_every_ticks": 16,
+    "max_workers": 4,
+    "context": {
+      "window_size_ticks": 128,
+      "window_count": 8
+    },
+    "tick_props": "all",
+    "events": "all",
+    "skip_events": [],
+    "event_fallback_minimal_on_error": true,
+    "event_fallback_minimal_on_empty": true,
+    "lazy_sanitize": true,
+    "include_grenades": true
+  },
+  "output": {
+    "mode": "mongo_ml",
+    "mongo_ml": {
+      "uri": "mongodb://192.168.1.106:27017",
+      "db": "cs2_demo_ml",
+      "matches_collection": "ml_matches",
+      "samples_collection": "ml_samples",
+      "meta_collection": "ml_meta",
+      "ensure_indexes": true,
+      "insert_batch_size": 200,
+      "server_selection_timeout_ms": 5000,
+      "connect_timeout_ms": 5000,
+      "socket_timeout_ms": 120000,
+      "retry_writes": true,
+      "allow_zero_samples": false,
+      "show_progress": true,
+      "min_rounds_per_match": 5
+    }
+  },
+  "dataset": {
+    "history_steps": 64,
+    "future_steps": 32,
+    "sample_stride_steps": 4,
+    "stride_steps": 1,
+    "max_players": 10,
+    "predict_future": true,
+    "features": [
+      "X",
+      "Y",
+      "Z",
+      "velocity_X",
+      "velocity_Y",
+      "velocity_Z",
+      "pitch",
+      "yaw",
+      "team_num",
+      "active_weapon",
+      "weapon_class",
+      "health",
+      "armor_value",
+      "is_alive",
+      "life_state",
+      "is_defusing",
+      "death_time",
+      "balance",
+      "start_balance",
+      "cash_spent_this_round",
+      "total_cash_spent",
+      "round_start_equip_value",
+      "current_equip_value",
+      "inventory",
+      "inventory_as_ids",
+      "has_helmet",
+      "has_defuser",
+      "has_rifle",
+      "has_awp_or_scout",
+      "has_armor",
+      "has_armor_helmet"
+    ],
+    "target_features": ["X", "Y", "Z"],
+    "categorical_features": ["active_weapon", "weapon_class"],
+    "normalization": "zscore",
+    "zscore_clip_abs": 20.0,
+    "global": {
+      "include": true,
+      "bomb": true,
+      "projectiles": true,
+      "active": true,
+      "events": true,
+      "team_features": true,
+      "team_recent_window_steps": 32,
+      "map_feature": false,
+      "stabilize": {
+        "enabled": true,
+        "signed_log1p": true,
+        "raw_clip_abs": 1e30,
+        "clip_abs": 20.0
+      }
+    }
+  },
+  "state": {
+    "processed_matches_file": "state/processed_matches.json"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "os":  "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "python":  "CPython 3.13.9",
+  "startedAt":  "2026-07-01T23:11:00.670923Z",
+  "args":  [
+    "--config",
+    "config.train.json",
+    "--epochs",
+    "5",
+    "--batch-size",
+    "4",
+    "--mongo-batch-size",
+    "8",
+    "--checkpoint-dir",
+    "checkpoints/world_model_first",
+    "--wandb",
+    "--wandb-project",
+    "cs2-demo-world-model",
+    "--wandb-entity",
+    "kgurgul-politechnika-wroc-awska",
+    "--wandb-run-name",
+    "first-world-model-retry"
+  ],
+  "program":  "-m cs2_demo_parser.train_world_model",
+  "email":  "kuba@gurgul.com.pl",
+  "root":  "/Users/kuba/CS2_demo_analyzer",
+  "host":  "Mac.localdomain",
+  "executable":  "/Users/kuba/CS2_demo_analyzer/.venv/bin/python3",
+  "cpu_count":  12,
+  "cpu_count_logical":  12,
+  "disk":  {
+    "/":  {
+      "total":  "494384795648",
+      "used":  "319558131712"
+    }
+  },
+  "memory":  {
+    "total":  "25769803776"
+  },
+  "apple":  {
+    "name":  "Apple M4 Pro",
+    "ecpuCores":  4,
+    "pcpuCores":  8,
+    "gpuCores":  16,
+    "memoryGb":  24,
+    "swapTotalBytes":  "22548578304",
+    "ramTotalBytes":  "25769803776",
+    "macModel":  "Mac16,8"
+  },
+  "writerId":  "l8da6u08d9901gxt32sqsi1ih8sthvpb"
+}

@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: cs2-demo-parser
+Version: 0.1.0
+Summary: CS2 demo parser pipeline for ML datasets stored in MongoDB.
+Requires-Python: >=3.10
+Requires-Dist: tqdm>=4.66
+Provides-Extra: parser
+Requires-Dist: demoparser2>=0.40; extra == "parser"
+Provides-Extra: mongo
+Requires-Dist: pymongo>=4.6; extra == "mongo"
+Provides-Extra: faceit
+Requires-Dist: requests>=2.31; extra == "faceit"
+Provides-Extra: hltv
+Requires-Dist: curl_cffi>=0.7; extra == "hltv"
+Provides-Extra: train
+Requires-Dist: torch>=2.1; extra == "train"
+Requires-Dist: pymongo>=4.6; extra == "train"
+Provides-Extra: all
+Requires-Dist: demoparser2>=0.40; extra == "all"
+Requires-Dist: pymongo>=4.6; extra == "all"
+Requires-Dist: requests>=2.31; extra == "all"
+Requires-Dist: torch>=2.1; extra == "all"
+Requires-Dist: curl_cffi>=0.7; extra == "all"

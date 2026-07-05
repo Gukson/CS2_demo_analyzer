@@ -1,0 +1,224 @@
+_wandb:
+    value:
+        cli_version: 0.28.0
+        e:
+            lssik5r3shix3o8d22pra5p5gblcpkjv:
+                apple:
+                    ecpuCores: 4
+                    gpuCores: 16
+                    macModel: Mac16,8
+                    memoryGb: 24
+                    name: Apple M4 Pro
+                    pcpuCores: 8
+                    ramTotalBytes: "25769803776"
+                    swapTotalBytes: "22548578304"
+                args:
+                    - --config
+                    - config.train.json
+                    - --epochs
+                    - "5"
+                    - --batch-size
+                    - "4"
+                    - --mongo-batch-size
+                    - "8"
+                    - --checkpoint-dir
+                    - checkpoints/world_model_first
+                    - --wandb
+                    - --wandb-project
+                    - cs2-demo-world-model
+                    - --wandb-entity
+                    - kgurgul-politechnika-wroc-awska
+                    - --wandb-run-name
+                    - first-world-model-retry
+                cpu_count: 12
+                cpu_count_logical: 12
+                disk:
+                    /:
+                        total: "494384795648"
+                        used: "319555563520"
+                email: kuba@gurgul.com.pl
+                executable: /Users/kuba/CS2_demo_analyzer/.venv/bin/python3
+                host: Mac.localdomain
+                memory:
+                    total: "25769803776"
+                os: macOS-26.5.1-arm64-arm-64bit-Mach-O
+                program: -m cs2_demo_parser.train_world_model
+                python: CPython 3.13.9
+                root: /Users/kuba/CS2_demo_analyzer
+                startedAt: "2026-07-01T23:07:19.029188Z"
+                writerId: lssik5r3shix3o8d22pra5p5gblcpkjv
+        m: []
+        python_version: 3.13.9
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 2
+                - 13
+                - 15
+                - 16
+            "4": 3.13.9
+            "5": 0.28.0
+            "12": 0.28.0
+            "13": darwin-arm64
+device:
+    value: mps
+model_config:
+    value:
+        dropout: 0.1
+        event_label_dim: 4
+        future_steps: 32
+        global_dim: 32
+        global_feature_dim: 37
+        hidden_dim: 256
+        latent_dim: 64
+        max_players: 10
+        num_layers: 2
+        player_feature_dim: 31
+        target_feature_dim: 3
+schema:
+    value:
+        event_label_dim: 4
+        event_label_names:
+            - future_has_kill
+            - future_has_bomb_planted
+            - future_has_bomb_defused
+            - future_has_bomb_exploded
+        feature_names:
+            - X
+            - "Y"
+            - Z
+            - velocity_X
+            - velocity_Y
+            - velocity_Z
+            - pitch
+            - yaw
+            - team_num
+            - active_weapon
+            - weapon_class
+            - health
+            - armor_value
+            - is_alive
+            - life_state
+            - is_defusing
+            - death_time
+            - balance
+            - start_balance
+            - cash_spent_this_round
+            - total_cash_spent
+            - round_start_equip_value
+            - current_equip_value
+            - inventory
+            - inventory_as_ids
+            - has_helmet
+            - has_defuser
+            - has_rifle
+            - has_awp_or_scout
+            - has_armor
+            - has_armor_helmet
+        future_steps: 32
+        global_feature_dim: 37
+        global_feature_names:
+            - round_number
+            - tick_in_round
+            - alive_t
+            - alive_ct
+            - health_t
+            - health_ct
+            - armor_t
+            - armor_ct
+            - equip_value_t
+            - equip_value_ct
+            - balance_t
+            - balance_ct
+            - bomb_planted
+            - bomb_carried
+            - bomb_dropped
+            - event_counts.player_death
+            - event_counts.bomb_planted
+            - event_counts.bomb_defused
+            - event_counts.bomb_exploded
+            - event_counts.player_hurt
+            - event_counts.weapon_fire
+            - event_counts.grenade_thrown
+            - event_counts.flashbang_detonate
+            - event_counts.smokegrenade_detonate
+            - event_counts.hegrenade_detonate
+            - event_counts.molotov_detonate
+            - recent_event_counts.player_death
+            - recent_event_counts.bomb_planted
+            - recent_event_counts.bomb_defused
+            - recent_event_counts.bomb_exploded
+            - recent_event_counts.player_hurt
+            - recent_event_counts.weapon_fire
+            - recent_event_counts.grenade_thrown
+            - recent_event_counts.flashbang_detonate
+            - recent_event_counts.smokegrenade_detonate
+            - recent_event_counts.hegrenade_detonate
+            - recent_event_counts.molotov_detonate
+        history_steps: 64
+        max_players: 10
+        player_feature_dim: 31
+        target_feature_dim: 3
+        target_feature_names:
+            - X
+            - "Y"
+            - Z
+train_config:
+    value:
+        dataset:
+            event_labels:
+                - future_has_kill
+                - future_has_bomb_planted
+                - future_has_bomb_defused
+                - future_has_bomb_exploded
+            mongo_batch_size: 8
+            split: train
+            val_fraction: 0.1
+        model:
+            dropout: 0.1
+            global_dim: 32
+            hidden_dim: 256
+            latent_dim: 64
+            num_layers: 2
+        mongo:
+            connect_timeout_ms: 5000
+            cursor_retries: 20
+            cursor_retry_sleep_seconds: 3
+            db: cs2_demo_ml
+            meta_collection: ml_meta
+            retry_reads: true
+            samples_collection: ml_samples
+            server_selection_timeout_ms: 5000
+            socket_timeout_ms: 120000
+            uri: mongodb://192.168.1.106:27017
+        training:
+            alive_loss_weight: 0.2
+            batch_size: 4
+            checkpoint_dir: checkpoints/world_model_first
+            device: auto
+            epochs: 5
+            event_loss_weight: 0.1
+            grad_clip_norm: 1
+            kl_beta_max: 0.1
+            kl_warmup_steps: 2000
+            learning_rate: 0.0003
+            log_every: 50
+            num_workers: 0
+            position_loss_weight: 1
+            seed: 1337
+            weight_decay: 1e-05
+            winner_loss_weight: 0.1
+        wandb:
+            enabled: true
+            entity: kgurgul-politechnika-wroc-awska
+            log_checkpoints: false
+            mode: online
+            name: first-world-model-retry
+            project: cs2-demo-world-model
+            tags:
+                - world-model
+                - cvae
+            watch_model: false

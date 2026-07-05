@@ -1,0 +1,60 @@
+{
+  "mongo": {
+    "uri": "mongodb://localhost:27017",
+    "db": "cs2_demo_ml",
+    "samples_collection": "ml_samples",
+    "meta_collection": "ml_meta",
+    "server_selection_timeout_ms": 5000,
+    "connect_timeout_ms": 5000,
+    "socket_timeout_ms": 120000,
+    "retry_reads": true,
+    "cursor_retries": 20,
+    "cursor_retry_sleep_seconds": 3.0
+  },
+  "dataset": {
+    "split": "train",
+    "val_fraction": 0.1,
+    "mongo_batch_size": 32,
+    "event_labels": [
+      "future_has_kill",
+      "future_has_bomb_planted",
+      "future_has_bomb_defused",
+      "future_has_bomb_exploded"
+    ]
+  },
+  "model": {
+    "hidden_dim": 256,
+    "latent_dim": 64,
+    "global_dim": 32,
+    "num_layers": 2,
+    "dropout": 0.1
+  },
+  "training": {
+    "epochs": 20,
+    "batch_size": 64,
+    "num_workers": 0,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.00001,
+    "grad_clip_norm": 1.0,
+    "kl_beta_max": 0.1,
+    "kl_warmup_steps": 2000,
+    "position_loss_weight": 1.0,
+    "alive_loss_weight": 0.2,
+    "event_loss_weight": 0.1,
+    "winner_loss_weight": 0.1,
+    "device": "auto",
+    "checkpoint_dir": "checkpoints/world_model_local",
+    "log_every": 50,
+    "seed": 1337
+  },
+  "wandb": {
+    "enabled": false,
+    "project": "cs2-demo-world-model",
+    "entity": null,
+    "name": null,
+    "mode": "offline",
+    "tags": ["world-model", "cvae", "local"],
+    "log_checkpoints": false,
+    "watch_model": false
+  }
+}

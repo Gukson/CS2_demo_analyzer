@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cs2-demo-parser"
+version = "0.1.0"
+description = "CS2 demo parser pipeline for ML datasets stored in MongoDB."
+requires-python = ">=3.10"
+dependencies = [
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+parser = ["demoparser2>=0.40"]
+mongo = ["pymongo>=4.6"]
+faceit = ["requests>=2.31"]
+hltv = ["curl_cffi>=0.7"]
+train = ["torch>=2.1", "pymongo>=4.6"]
+wandb = ["wandb>=0.17"]
+all = ["demoparser2>=0.40", "pymongo>=4.6", "requests>=2.31", "torch>=2.1", "curl_cffi>=0.7", "wandb>=0.17"]
+
+[tool.setuptools.packages.find]
+include = ["cs2_demo_parser*"]

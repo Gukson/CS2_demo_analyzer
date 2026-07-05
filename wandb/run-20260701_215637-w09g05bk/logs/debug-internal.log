@@ -1,0 +1,17 @@
+{"time":"2026-07-01T21:56:37.281305+02:00","level":"INFO","msg":"wandb-core"}
+{"time":"2026-07-01T21:56:37.283611+02:00","level":"INFO","msg":"stream: starting","core version":"0.28.0"}
+{"time":"2026-07-01T21:56:37.625983+02:00","level":"INFO","msg":"stream: created new stream","id":"w09g05bk"}
+{"time":"2026-07-01T21:56:37.626208+02:00","level":"INFO","msg":"stream: started"}
+{"time":"2026-07-01T21:56:37.626217+02:00","level":"INFO","msg":"writer: started","stream_id":"w09g05bk"}
+{"time":"2026-07-01T21:56:37.626698+02:00","level":"INFO","msg":"handler: started"}
+{"time":"2026-07-01T21:56:37.626836+02:00","level":"INFO","msg":"sender: started"}
+{"time":"2026-07-01T21:56:37.795404+02:00","level":"ERROR","msg":"api: HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2026-07-01T21:56:37.795468+02:00","level":"ERROR","msg":"runupserter: failed to init run","error":"returned error 404: {\"data\":{\"upsertBucket\":null},\"errors\":[{\"message\":\"entity kgurgul not found during upsertBucket\",\"path\":[\"upsertBucket\"]}]}"}
+{"time":"2026-07-01T21:56:37.801452+02:00","level":"ERROR","msg":"sender: uploadConfigFile: runhandle: run not yet initialized"}
+{"time":"2026-07-01T21:56:37.801934+02:00","level":"ERROR","msg":"runfiles: runhandle: run not yet initialized"}
+{"time":"2026-07-01T21:56:37.802357+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-07-01T21:56:37.802368+02:00","level":"INFO","msg":"stream: finishing up"}
+{"time":"2026-07-01T21:56:37.802374+02:00","level":"INFO","msg":"handler: closed"}
+{"time":"2026-07-01T21:56:37.802401+02:00","level":"INFO","msg":"sender: closed"}
+{"time":"2026-07-01T21:56:37.802406+02:00","level":"INFO","msg":"stream: all finished"}
+{"time":"2026-07-01T21:56:37.807416+02:00","level":"ERROR","msg":"stream: runURL: runhandle: run not yet initialized"}
