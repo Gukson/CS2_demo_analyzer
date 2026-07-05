@@ -117,6 +117,8 @@ def train(config: dict[str, Any]) -> None:
                 train_mode=True,
                 limit_batches=training_cfg.get("limit_train_batches"),
                 total_batches=train_total_batches,
+                wandb_ctx=wandb_ctx,
+                epoch=epoch,
             )
             val_metrics, _ = _run_epoch(
                 model,
@@ -128,6 +130,8 @@ def train(config: dict[str, Any]) -> None:
                 train_mode=False,
                 limit_batches=training_cfg.get("limit_val_batches"),
                 total_batches=val_total_batches,
+                wandb_ctx=None,
+                epoch=epoch,
             )
             log.info("epoch=%s train=%s val=%s", epoch, _fmt(train_metrics), _fmt(val_metrics))
             latest_path = checkpoint_dir / "latest.pt"
@@ -208,6 +212,8 @@ def _run_epoch(
     train_mode: bool,
     limit_batches: int | None,
     total_batches: int | None = None,
+    wandb_ctx: dict[str, Any] | None = None,
+    epoch: int | None = None,
 ) -> tuple[dict[str, float], int]:
     model.train(train_mode)
     totals: dict[str, float] = {}
@@ -251,10 +257,21 @@ def _run_epoch(
         totals["data_wait_seconds"] = totals.get("data_wait_seconds", 0.0) + data_wait_seconds
         totals["step_seconds"] = totals.get("step_seconds", 0.0) + step_seconds
         if train_mode and batch_idx % int(training_cfg.get("log_every", 50)) == 0:
+            loss_values = {key: float(value.detach().cpu()) for key, value in losses.items()}
             progress.set_postfix(
-                loss=float(losses["loss"].detach().cpu()),
+                loss=loss_values["loss"],
                 data=f"{data_wait_seconds:.3f}s",
                 step=f"{step_seconds:.3f}s",
+            )
+            _log_wandb_step(
+                wandb_ctx,
+                global_step=global_step,
+                epoch=epoch,
+                batch_idx=batch_idx,
+                metrics=loss_values,
+                data_wait_seconds=data_wait_seconds,
+                step_seconds=step_seconds,
+                learning_rate=float(training_cfg.get("learning_rate", 3e-4)),
             )
         next_start = time.perf_counter()
     if count == 0:
@@ -435,6 +452,30 @@ def _log_wandb_epoch(
     }
     payload.update({f"train/{key}": value for key, value in train_metrics.items()})
     payload.update({f"val/{key}": value for key, value in val_metrics.items()})
+    ctx["wandb"].log(payload, step=global_step)
+
+
+def _log_wandb_step(
+    ctx: dict[str, Any] | None,
+    *,
+    global_step: int,
+    epoch: int | None,
+    batch_idx: int,
+    metrics: dict[str, float],
+    data_wait_seconds: float,
+    step_seconds: float,
+    learning_rate: float,
+) -> None:
+    if ctx is None:
+        return
+    payload = {
+        "epoch": epoch,
+        "train/batch_idx": batch_idx,
+        "train/data_wait_seconds": data_wait_seconds,
+        "train/step_seconds": step_seconds,
+        "learning_rate": learning_rate,
+    }
+    payload.update({f"train/{key}": value for key, value in metrics.items()})
     ctx["wandb"].log(payload, step=global_step)
 
 
