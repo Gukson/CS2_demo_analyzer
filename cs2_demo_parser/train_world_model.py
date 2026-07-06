@@ -464,10 +464,18 @@ def _init_wandb(
         init_kwargs["mode"] = wandb_cfg["mode"]
     if wandb_cfg.get("tags"):
         init_kwargs["tags"] = list(wandb_cfg["tags"])
-    run = wandb.init(**init_kwargs)
-    if bool(wandb_cfg.get("watch_model", False)):
-        wandb.watch(model, log=wandb_cfg.get("watch_log", "gradients"), log_freq=int(wandb_cfg.get("watch_log_freq", 100)))
-    return {"wandb": wandb, "run": run}
+    try:
+        run = wandb.init(**init_kwargs)
+        if bool(wandb_cfg.get("watch_model", False)):
+            wandb.watch(
+                model,
+                log=wandb_cfg.get("watch_log", "gradients"),
+                log_freq=int(wandb_cfg.get("watch_log_freq", 100)),
+            )
+    except Exception as exc:
+        log.warning("Weights & Biases initialization failed; continuing without W&B: %s", exc)
+        return None
+    return {"wandb": wandb, "run": run, "disabled": False}
 
 
 def _log_wandb_epoch(
@@ -490,7 +498,7 @@ def _log_wandb_epoch(
     }
     payload.update({f"train/{key}": value for key, value in train_metrics.items()})
     payload.update({f"val/{key}": value for key, value in val_metrics.items()})
-    ctx["wandb"].log(payload, step=global_step)
+    _safe_wandb_call(ctx, "log epoch metrics", lambda: ctx["wandb"].log(payload, step=global_step))
 
 
 def _log_wandb_step(
@@ -514,19 +522,29 @@ def _log_wandb_step(
         "learning_rate": learning_rate,
     }
     payload.update({f"train/{key}": value for key, value in metrics.items()})
-    ctx["wandb"].log(payload, step=global_step)
+    _safe_wandb_call(ctx, "log step metrics", lambda: ctx["wandb"].log(payload, step=global_step))
 
 
 def _save_wandb_file(ctx: dict[str, Any] | None, path: Path) -> None:
     if ctx is None or not path.exists():
         return
-    ctx["wandb"].save(str(path))
+    _safe_wandb_call(ctx, f"save {path}", lambda: ctx["wandb"].save(str(path)))
 
 
 def _finish_wandb(ctx: dict[str, Any] | None) -> None:
     if ctx is None:
         return
-    ctx["wandb"].finish()
+    _safe_wandb_call(ctx, "finish run", lambda: ctx["wandb"].finish())
+
+
+def _safe_wandb_call(ctx: dict[str, Any] | None, action: str, fn: Any) -> None:
+    if ctx is None or ctx.get("disabled"):
+        return
+    try:
+        fn()
+    except Exception as exc:
+        ctx["disabled"] = True
+        log.warning("Weights & Biases failed while trying to %s; disabling W&B for this process: %s", action, exc)
 
 
 def _load_json(path: str) -> dict[str, Any]:
