@@ -106,7 +106,7 @@ class MongoSequenceSampleStore:
                     yield doc
                 if yielded == 0:
                     return
-            except (recoverable_errors, MemoryError) as exc:
+            except recoverable_errors + (MemoryError,) as exc:
                 retries += 1
                 if isinstance(exc, MemoryError) and effective_batch_size > 1:
                     previous_batch_size = effective_batch_size

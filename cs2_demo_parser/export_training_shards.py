@@ -120,7 +120,7 @@ def export_shards(config: dict[str, Any], args: argparse.Namespace) -> None:
         "shards": shard_counts,
     }
     with (output_dir / "manifest.json").open("w", encoding="utf-8") as fh:
-        json.dump(manifest, fh, indent=2)
+        json.dump(manifest, fh, indent=2, default=str)
     log.info(
         "Exported shards to %s: train=%s samples/%s shards val=%s samples/%s shards",
         output_dir,
