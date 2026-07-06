@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import hashlib
 import math
+import random
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Any
 
 import torch
@@ -144,6 +146,45 @@ class MongoWorldModelDataset(IterableDataset):
             )
 
 
+class ShardedWorldModelDataset(IterableDataset):
+    def __init__(
+        self,
+        shard_dir: str | Path,
+        *,
+        fold: str,
+        shuffle_shards: bool = True,
+        shuffle_samples: bool = True,
+        seed: int = 1337,
+    ) -> None:
+        super().__init__()
+        self.shard_dir = Path(shard_dir)
+        self.fold = fold
+        self.shuffle_shards = shuffle_shards
+        self.shuffle_samples = shuffle_samples
+        self.seed = seed
+        self.files = sorted((self.shard_dir / fold).glob("*.pt"))
+        if not self.files:
+            raise RuntimeError(f"No {fold} shard files found in {self.shard_dir / fold}")
+
+    def __iter__(self):
+        worker = get_worker_info()
+        files = list(self.files)
+        rng = random.Random(self.seed + (worker.id if worker is not None else 0))
+        if self.shuffle_shards:
+            rng.shuffle(files)
+        if worker is not None:
+            files = [path for idx, path in enumerate(files) if idx % worker.num_workers == worker.id]
+        for path in files:
+            payload = _torch_load_cpu(path)
+            tensors = payload.get("tensors") or payload
+            count = int(payload.get("count") or _infer_tensor_count(tensors))
+            indices = list(range(count))
+            if self.shuffle_samples:
+                rng.shuffle(indices)
+            for idx in indices:
+                yield {key: value[idx] for key, value in tensors.items()}
+
+
 def infer_schema(meta: dict[str, Any], event_label_names: list[str], vectorizer: GlobalFeatureVectorizer) -> SampleSchema:
     sample_schema = meta.get("sample_schema") or {}
     feature_names = list(meta.get("features") or [])
@@ -193,6 +234,32 @@ def encode_sample(
 def collate_world_model_batch(items: list[dict[str, torch.Tensor]]) -> dict[str, torch.Tensor]:
     keys = items[0].keys()
     return {key: torch.stack([item[key] for item in items], dim=0) for key in keys}
+
+
+def stack_encoded_samples(items: list[dict[str, torch.Tensor]]) -> dict[str, torch.Tensor]:
+    return collate_world_model_batch(items)
+
+
+def load_shard_manifest(shard_dir: str | Path) -> dict[str, Any]:
+    manifest_path = Path(shard_dir) / "manifest.json"
+    if not manifest_path.exists():
+        raise RuntimeError(f"Shard manifest not found: {manifest_path}")
+    import json
+
+    with manifest_path.open("r", encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def _torch_load_cpu(path: Path) -> dict[str, Any]:
+    try:
+        return torch.load(path, map_location="cpu", weights_only=True)
+    except TypeError:
+        return torch.load(path, map_location="cpu")
+
+
+def _infer_tensor_count(tensors: dict[str, torch.Tensor]) -> int:
+    first = next(iter(tensors.values()), None)
+    return 0 if first is None else int(first.shape[0])
 
 
 def _normalize_sequence(sequence: list[list[list[Any]]], names: list[str]) -> list[list[list[float]]]:

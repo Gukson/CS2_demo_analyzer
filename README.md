@@ -160,6 +160,55 @@ python3 -m cs2_demo_parser.train_world_model \
   --wandb-mode offline
 ```
 
+For faster and more stable training, export Mongo samples to local PyTorch shards first:
+
+```bash
+python3 -m cs2_demo_parser.export_training_shards \
+  --config config.train.local.json \
+  --output-dir data/world_model_shards \
+  --shard-size 4096 \
+  --mongo-batch-size 32 \
+  --overwrite
+```
+
+Then train from the shard directory instead of MongoDB:
+
+```bash
+python3 -m cs2_demo_parser.train_world_model \
+  --config config.train.local.json \
+  --shard-dir data/world_model_shards \
+  --epochs 5 \
+  --batch-size 16 \
+  --num-workers 2 \
+  --checkpoint-dir checkpoints/world_model_sharded \
+  --wandb \
+  --wandb-project cs2-demo-world-model \
+  --wandb-run-name first-world-model-sharded
+```
+
+On Windows PowerShell, use backticks:
+
+```powershell
+python -m cs2_demo_parser.export_training_shards `
+  --config config.train.local.json `
+  --output-dir data/world_model_shards `
+  --shard-size 4096 `
+  --mongo-batch-size 32 `
+  --overwrite
+
+python -m cs2_demo_parser.train_world_model `
+  --config config.train.local.json `
+  --shard-dir data/world_model_shards `
+  --epochs 5 `
+  --batch-size 16 `
+  --num-workers 2 `
+  --checkpoint-dir checkpoints/world_model_sharded `
+  --wandb `
+  --wandb-project cs2-demo-world-model `
+  --wandb-entity kgurgul-politechnika-wroc-awska `
+  --wandb-run-name first-world-model-sharded
+```
+
 The model is implemented in `cs2_demo_parser.world_model.WorldModelCVAE`. It learns a latent `z`
 conditioned on history/global state and predicts future positions, future alive masks, future event
 labels and the round winner. Checkpoints are written to `checkpoints/world_model/latest.pt` and

@@ -90,12 +90,13 @@ class MongoSequenceSampleStore:
         )
         last_id = None
         retries = 0
+        effective_batch_size = max(1, batch_size)
         while True:
             page_query = dict(query)
             if last_id is not None:
                 page_query["_id"] = {"$gt": last_id}
             try:
-                cursor = self.samples.find(page_query, projection=projection, batch_size=batch_size).sort("_id", 1)
+                cursor = self.samples.find(page_query, projection=projection, batch_size=effective_batch_size).sort("_id", 1)
                 yielded = 0
                 for doc in cursor:
                     last_id = doc.get("_id")
@@ -105,16 +106,25 @@ class MongoSequenceSampleStore:
                     yield doc
                 if yielded == 0:
                     return
-            except recoverable_errors as exc:
+            except (recoverable_errors, MemoryError) as exc:
                 retries += 1
+                if isinstance(exc, MemoryError) and effective_batch_size > 1:
+                    previous_batch_size = effective_batch_size
+                    effective_batch_size = max(1, effective_batch_size // 2)
+                    log.warning(
+                        "Mongo cursor response was too large for memory; reducing cursor batch_size from %s to %s.",
+                        previous_batch_size,
+                        effective_batch_size,
+                    )
                 if retries > self.cursor_retries:
                     raise
                 log.warning(
-                    "Mongo cursor interrupted after _id=%s; retrying %s/%s in %.1fs: %s",
+                    "Mongo cursor interrupted after _id=%s; retrying %s/%s in %.1fs with batch_size=%s: %s",
                     last_id,
                     retries,
                     self.cursor_retries,
                     self.cursor_retry_sleep_seconds,
+                    effective_batch_size,
                     exc,
                 )
                 time.sleep(self.cursor_retry_sleep_seconds)

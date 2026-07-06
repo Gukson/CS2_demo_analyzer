@@ -18,8 +18,10 @@ from .model_samples import MongoSequenceSampleStore
 from .training_data import (
     GlobalFeatureVectorizer,
     MongoWorldModelDataset,
+    ShardedWorldModelDataset,
     collate_world_model_batch,
     infer_schema,
+    load_shard_manifest,
 )
 from .world_model import WorldModelCVAE, WorldModelConfig, kl_divergence
 
@@ -34,6 +36,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
     parser.add_argument("--num-workers", type=int)
     parser.add_argument("--device")
     parser.add_argument("--checkpoint-dir")
+    parser.add_argument("--shard-dir", help="Train from exported local .pt shards instead of MongoDB.")
     parser.add_argument(
         "--mongo-batch-size",
         type=int,
@@ -73,8 +76,9 @@ def train(config: dict[str, Any]) -> None:
 
     event_label_names = list(config["dataset"].get("event_labels") or [])
     vectorizer = GlobalFeatureVectorizer()
-    store = MongoSequenceSampleStore(config["mongo"])
-    meta = store.get_meta() or {}
+    shard_dir = config["dataset"].get("shard_dir")
+    store = None if shard_dir else MongoSequenceSampleStore(config["mongo"])
+    meta = _load_training_meta(config, store)
     if not meta:
         raise RuntimeError(
             "No ml_meta document found in Mongo. Run the demo parser first so the training code can infer sample shapes."
@@ -179,20 +183,30 @@ def _build_loader(
     dataset_cfg = config["dataset"]
     training_cfg = config["training"]
     num_workers = int(training_cfg.get("num_workers", 0))
-    if num_workers > 0:
+    shard_dir = dataset_cfg.get("shard_dir")
+    if num_workers > 0 and not shard_dir:
         log.warning(
             "num_workers=%s with Mongo IterableDataset can duplicate Mongo reads; use 0 unless the dataset reader is partitioned.",
             num_workers,
         )
-    dataset = MongoWorldModelDataset(
-        config["mongo"],
-        split=dataset_cfg.get("split", "train"),
-        fold=fold,
-        val_fraction=float(dataset_cfg.get("val_fraction", 0.1)),
-        event_label_names=event_label_names,
-        vectorizer=vectorizer,
-        mongo_batch_size=int(dataset_cfg.get("mongo_batch_size", 512)),
-    )
+    if shard_dir:
+        dataset = ShardedWorldModelDataset(
+            shard_dir,
+            fold=fold,
+            shuffle_shards=bool(dataset_cfg.get("shuffle_shards", fold == "train")),
+            shuffle_samples=bool(dataset_cfg.get("shuffle_samples", fold == "train")),
+            seed=int(training_cfg.get("seed", 1337)),
+        )
+    else:
+        dataset = MongoWorldModelDataset(
+            config["mongo"],
+            split=dataset_cfg.get("split", "train"),
+            fold=fold,
+            val_fraction=float(dataset_cfg.get("val_fraction", 0.1)),
+            event_label_names=event_label_names,
+            vectorizer=vectorizer,
+            mongo_batch_size=int(dataset_cfg.get("mongo_batch_size", 512)),
+        )
     return DataLoader(
         dataset,
         batch_size=int(training_cfg.get("batch_size", 64)),
@@ -279,18 +293,42 @@ def _run_epoch(
     return {key: value / count for key, value in totals.items()}, global_step
 
 
-def _estimate_epoch_batches(config: dict[str, Any], store: MongoSequenceSampleStore) -> tuple[int | None, int | None]:
+def _load_training_meta(config: dict[str, Any], store: MongoSequenceSampleStore | None) -> dict[str, Any]:
+    shard_dir = config["dataset"].get("shard_dir")
+    if shard_dir:
+        manifest = load_shard_manifest(shard_dir)
+        return manifest.get("dataset", {}).get("meta") or {}
+    if store is None:
+        return {}
+    return store.get_meta() or {}
+
+
+def _estimate_epoch_batches(config: dict[str, Any], store: MongoSequenceSampleStore | None) -> tuple[int | None, int | None]:
     dataset_cfg = config["dataset"]
     training_cfg = config["training"]
-    try:
-        total_samples = store.count_samples(split=dataset_cfg.get("split", "train"))
-    except Exception as exc:
-        log.warning("Could not estimate epoch length from Mongo: %s", exc)
-        return None, None
     val_fraction = max(0.0, min(1.0, float(dataset_cfg.get("val_fraction", 0.1))))
     batch_size = max(1, int(training_cfg.get("batch_size", 64)))
-    train_samples = int(total_samples * (1.0 - val_fraction))
-    val_samples = total_samples - train_samples
+    shard_dir = dataset_cfg.get("shard_dir")
+    if shard_dir:
+        try:
+            manifest = load_shard_manifest(shard_dir)
+            counts = manifest.get("counts") or {}
+            train_samples = int(counts.get("train", 0))
+            val_samples = int(counts.get("val", 0))
+            total_samples = train_samples + val_samples
+        except Exception as exc:
+            log.warning("Could not estimate epoch length from shard manifest: %s", exc)
+            return None, None
+    else:
+        if store is None:
+            return None, None
+        try:
+            total_samples = store.count_samples(split=dataset_cfg.get("split", "train"))
+        except Exception as exc:
+            log.warning("Could not estimate epoch length from Mongo: %s", exc)
+            return None, None
+        train_samples = int(total_samples * (1.0 - val_fraction))
+        val_samples = total_samples - train_samples
     train_batches = math.ceil(train_samples / batch_size)
     val_batches = math.ceil(val_samples / batch_size)
     if training_cfg.get("limit_train_batches") is not None:
@@ -507,6 +545,8 @@ def _apply_overrides(config: dict[str, Any], args: argparse.Namespace) -> None:
         config["training"]["device"] = args.device
     if args.checkpoint_dir:
         config["training"]["checkpoint_dir"] = args.checkpoint_dir
+    if args.shard_dir:
+        config["dataset"]["shard_dir"] = args.shard_dir
     if args.mongo_batch_size is not None:
         config["dataset"]["mongo_batch_size"] = args.mongo_batch_size
     if args.limit_train_batches is not None:
